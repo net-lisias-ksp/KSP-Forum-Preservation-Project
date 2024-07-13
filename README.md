@@ -1,4 +1,4 @@
-# KSP-Forum-Preserving-Project
+# KSP's Forum Preservation Project
 
 Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for the posteriority if the worst happens.
 
@@ -25,7 +25,7 @@ However, we need to help them to help us (willingly or not). So we need to addre
 
 Given the above considerations, I concluded that going Internet Archive is the most viable solution. The Look and Feel makes absolutely sure you are not impersonating Forum or TTI, the content is preserved preventing plagiarism and since the Internet Archive managed to legally publish their archives, this is a precedent that we may use to do the same.
 
-TTI will always have the right to file a DMCA on anyone publishing such Archive, however. To tell you the true, they can do it even on our personal sites about the franchise (see Nintendo). So let's discourse about what would prompt them to do that:
+TTI will always have the right to file a DMCA on anyone publishing such Archive, however. To tell you the true, they can do it even on our personal sites about the franchise (see [Nintendo](https://news.ycombinator.com/item?id=35597493). So let's discourse about what would prompt them to do that:
 
 1. Risk of losing control of the IP
 2. Devaluation of the IP
