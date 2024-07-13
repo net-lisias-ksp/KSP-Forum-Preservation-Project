@@ -71,12 +71,28 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 ## References
 
 * Forum
-	+ [IGN reports: T2 wants to get rid of the IP, they want to offload PD completely.](https://forum.kerbalspaceprogram.com/topic/224984-ign-reports-t2-wants-to-get-rid-of-the-ip-they-want-to-offload-pd-completely/)
-	+ [Take Two Interactive (Rockstar, 2K, Private Division) canceling games, ending projects and laying off 5% of its workforce](https://forum.kerbalspaceprogram.com/topic/224485-take-two-interactive-rockstar-2k-private-division-canceling-games-ending-projects-and-laying-off-5-of-its-workforce/)
-	+ [Bad Gateway,Possible End,Theories,Solutions.](https://forum.kerbalspaceprogram.com/topic/225145-bad-gatewaypossible-endtheoriessolutions/#comment-4404679)
 	+ [KSP Forums Archival Options.](https://forum.kerbalspaceprogram.com/topic/225368-ksp-forums-archival-options/)
-	+ [An update of sorts from your forum moderation team.](https://forum.kerbalspaceprogram.com/topic/225365-an-update-of-sorts-from-your-forum-moderation-team/)
 	+ [Wiki migration plan?](https://forum.kerbalspaceprogram.com/topic/225405-wiki-migration-plan/)
+	+ Historical Context 
+		- [IGN reports: T2 wants to get rid of the IP, they want to offload PD completely.](https://forum.kerbalspaceprogram.com/topic/224984-ign-reports-t2-wants-to-get-rid-of-the-ip-they-want-to-offload-pd-completely/)
+		- [Take Two Interactive (Rockstar, 2K, Private Division) canceling games, ending projects and laying off 5% of its workforce](https://forum.kerbalspaceprogram.com/topic/224485-take-two-interactive-rockstar-2k-private-division-canceling-games-ending-projects-and-laying-off-5-of-its-workforce/)
+		- [Bad Gateway,Possible End,Theories,Solutions.](https://forum.kerbalspaceprogram.com/topic/225145-bad-gatewaypossible-endtheoriessolutions/#comment-4404679)
+		- [An update of sorts from your forum moderation team.](https://forum.kerbalspaceprogram.com/topic/225365-an-update-of-sorts-from-your-forum-moderation-team/)
+* Toolset
+	+ [`pywb`](https://github.com/webrecorder/pywb) Core Python Web Archiving Toolkit for replay and recording of web archives 
+		- [Manual](https://pywb.readthedocs.io/en/latest/manual/)
+		- [`wombat`](https://github.com/webrecorder/wombat) Wombat.js client-side rewriting library 
+		- [`outbackcdx`](https://github.com/nla/outbackcdx) Web archive index server based on RocksDB 
+		- [`cdxj-indexer`](https://github.com/webrecorder/cdxj-indexer) CDXJ Indexing of WARC/ARCs 
+	+ [`waybackpack`](https://github.com/jsvine/waybackpack) Download the entire Wayback Machine archive for a given URL. 
+	+ [`scrapy`](https://scrapy.org/) An open source and collaborative
+* Known publicly available efforts
+	+ [forum.kerbalspaceprogram.com_202305](https://archive.org/details/forum.kerbalspaceprogram.com_202305)
+	+ [bizzehdee's dataset](https://github.com/bizzehdee/kspforumdata)
+* Relevant Material
+	+ [Welcome to the Internet Archive Developer Portal](https://archive.org/developers/index.html)
+		- [Internet Archive Tasks API](https://archive.org/developers/tasks.html)
+	+ [nternetarchive on github](https://github.com/orgs/internetarchive/repositories)
+	+ [Wayback Archiver](https://github.com/wabarc)
+	+ [iipc's Awesome Web Archiving document](https://github.com/iipc/awesome-web-archiving)
 
- 
-​
