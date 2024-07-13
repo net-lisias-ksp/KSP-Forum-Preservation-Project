@@ -4,6 +4,16 @@ Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for 
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
+
+## In a Hurry
+
+* [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
+* [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
+* Documentation	
+	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/mestre/README.md)
+	+ [Tools](./Docs/Tools.md)
+
+
 ## Description
 
 With the (at the moment of this writing) recent news about the Private Division's staff being sacked and the Intercept Games (Studio that was carrying on the KSP2 development) shutdown, the whole franchise entered into a limbo - causing fears that, perhaps, support for the Forum could cease.
@@ -62,7 +72,8 @@ But, by then, we risk being taken down on a DMCA, right? What are the possible o
 
 Again, since our goal is the preservation of the Content, it's our best move to do the Archiving the same. What matters if TTI takes them down in the future, as long Forum is alive? And if Forum ever dies, it's still their best interest to preserve the content as any future reboot of the franchise would benefit from it. Heck, I would not be surprised if someone on TTI ends up making a copy of our Archives for them.
 
-##  DISCLAIMER
+
+## DISCLAIMER
 
 We are not cheap work force. We are not doing it for "them".
 
@@ -71,6 +82,7 @@ We are doing it for ourselves in a way that "they" would also be benefited, we a
 Yes, they royally screwed the pooch and there's a chance we would be helping to save their sorry arses. But we are doing it to save our own - saving theirs is a compromise to enhance our chances. ;)
 
 [Stone Soup](https://en.wikipedia.org/wiki/Stone_Soup).
+
 
 ## References
 
