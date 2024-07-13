@@ -6,26 +6,30 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## Description
 
-With the (at the moment of this writing) recent news about the Private Division's staff being sacked and the Intercept Games (Studio that was carrying on the KSP2 development) shutdown, the whole franchise entered in a limbo - causing fears that, perhaps, support for the Forum could cease.
+With the (at the moment of this writing) recent news about the Private Division's staff being sacked and the Intercept Games (Studio that was carrying on the KSP2 development) shutdown, the whole franchise entered into a limbo - causing fears that, perhaps, support for the Forum could cease.
 
-Losing more than 10 years of historical content, as well know-how on how mod the game would be, well, 
+Losing more than 10 years of historical content, as well know-how on how mod the game would be, well, terribly unfortunate to say the least!
 
-However, doing that indiscriminately will hurt Forum, prompting someone to take down the initiative - so I decided to go WARC on the thing, so we can share between us the archives saving Forum's some bucks in bandwidth. Additionally, since anyone can do its own archive and compare the results, this will keep people (including me) honest. There're legally abiding terms published on this Forum, and any change on some of them would be considered fraud - having more people with the same data is a safety measure for everybody involved, as we can support each other in the case of a dispute.
+We already have the [Internet Archive](https://web.archive.org/web/*/forum.kerbalspaceprogram.com) but, as a matter of fact, it's unwise to have all your eggs on the same basket (most of us have only two, to be honest!) and the bigger the guy, the worst is the fall. IA had already suffered a (unjust) [big loss on a lawsuit](https://www.techdirt.com/2024/06/20/500000-books-have-been-deleted-from-the-internet-archives-lending-library/) that ended up with the lost of 500.000 ebooks that were being (legally, to be clear) available.
 
-I completely agree that plain mirroring the site is a bad idea. In order to have a chance to survive, the Archives must try their best to be plausibly considered fair use on a Court, not to mention gathering people to support on our case, prompting TTI (or anyone that ends up buying the lemon IP) to consider any earnings on taking the thing down versus the drawbacks on P/R and deciding it's their best interest not to intervene in a destructive way.
+Concerning Kerbonauts are, so, gathering together on efforts to preserve that wonderful content if the worst happens.
 
-However, we need to help them to help us (willingly or not). So we need to address some elephants in the room (and, yeah, you are really right on the money):
+However, doing that indiscriminately will hurt Forum, prompting someone to take down the initiative - being the reason I decided to go WARC on the thing, so we can share between us the archives saving Forum's some bucks in bandwidth. Additionally, since anyone can do its own archive and compare the results, this will keep people (including me) honest. There're legally abiding terms published on this Forum, and any change on some of them would be considered fraud - having more people with the same data is a safety measure for everybody involved, as we can support each other in the case of a dispute.
+
+Plain mirroring the site is a bad idea. In order to have a chance to survive, the Archives must try their best to be plausibly considered fair use on a Court, not to mention gathering people to support on our case, prompting TTI (or anyone that ends up buying the ~~lemon~~ IP) to consider any earnings on taking the thing down versus the drawbacks on P/R and deciding it's their best interest not to intervene in a destructive way.
+
+However, we need to help them to help us (willingly or not). So we need to address some elephants in the room:
 
 * Impersonation
 	+ Dude, this is absolutely a no-go. Under no circumstances one can republish Forum's data in a way that may lead people to believe that you are them. So you just can't publish a mirror of the thing ipisi literis using a different URL.
 * Plagiarism
-	+ Ditto! If you change the content in an attempt to prevent the Impersonation, you are... well... changing the IP and publishing a derivative!!! This is piracy, simple like that.
+	+ *Ditto*! If you change the content in an attempt to prevent the Impersonation, you are... well... changing the IP and publishing a derivative!!! This is piracy, simple like that.
 * Copyright
-	+ Our best hope of success is to rely on the Copyright loopholes that may allow us to legally do this stunt.
+	+ Our best hope of success is to rely on the Copyright loopholes that **may** allow us to legally do this stunt.
 
 Given the above considerations, I concluded that going Internet Archive is the most viable solution. The Look and Feel makes absolutely sure you are not impersonating Forum or TTI, the content is preserved preventing plagiarism and since the Internet Archive managed to legally publish their archives, this is a precedent that we may use to do the same.
 
-TTI will always have the right to file a DMCA on anyone publishing such Archive, however. To tell you the true, they can do it even on our personal sites about the franchise (see [Nintendo](https://news.ycombinator.com/item?id=35597493). So let's discourse about what would prompt them to do that:
+TTI (or whoever ends up buying the ~~lemon~~ IP) will always have the right to file a DMCA on anyone publishing such Archive, however. To tell you the true, they can do it even on our personal sites about the franchise (see [Nintendo](https://news.ycombinator.com/item?id=35597493). So let's discourse about what would prompt them to do that:
 
 1. Risk of losing control of the IP
 2. Devaluation of the IP
@@ -36,7 +40,7 @@ Going Internet Archive style mitigates the Risk 1 and Risk 2 - as a matter of fa
 
 The Risk 3 is something we don't have to worry about, as Forum doesn't generate direct revenue - and the indirect ones we had covered by mitigating Risks 1 e 2.
 
-About the Risk 4, the only defence we have is P/R. They had a huge backslash on the KSP2 drama, and that hurts - right now I'm pretty sure there's someone there overviewing everything to prevent another one. Bad P/R costs them money, huge amounts of money. And they are on the game (pun not intended) for the money.
+About the Risk 4, the only defence we have is P/R. They had a **huge** backslash on the KSP2 drama, and that hurts - right now I'm pretty sure there's someone there overviewing everything to prevent another one. Bad P/R costs them money, huge amounts of money. And they are on the game (pun not intended) for the money.
 
 So, as long we manage to help them to help us (willingly or not), we have a reasonable chance to score this stunt.
 
@@ -47,7 +51,7 @@ So, as long we manage to help them to help us (willingly or not), we have a reas
 3. We do not do the Archiving, the Forum survives: Content preserved.
 4. We do not do the Archiving, the Forum dies: Content is lost.
 
-Since our main (and only) goal is the survival of the Content (as nobody here is going to make any money, directly or indirectly, with it), where are the better chances of saving the Content? Well, doing the Archive ourselves. So the logical decision is doing the Archive.
+Since our main (and only) goal is the survival of the Content (as nobody here is going to make any money, directly or indirectly, with it), where are the better chances of saving the Content? Well, doing the Archive ourselves. So the logical decision is **doing the Archive**.
 
 But, by then, we risk being taken down on a DMCA, right? What are the possible outcomes?
 
@@ -60,9 +64,9 @@ Again, since our goal is the preservation of the Content, it's our best move to 
 
 ##  DISCLAIMER
 
-We are not cheap work force. We are not doing it for them.
+We are not cheap work force. We are not doing it for "them".
 
-We are doing it for ourselves in a way that they would also be benefited, we are working to achieve a win-win situation.
+We are doing it for ourselves in a way that "they" would also be benefited, we are working to achieve a win-win situation.
 
 Yes, they royally screwed the pooch and there's a chance we would be helping to save their sorry arses. But we are doing it to save our own - saving theirs is a compromise to enhance our chances. ;)
 
@@ -78,6 +82,7 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 		- [Take Two Interactive (Rockstar, 2K, Private Division) canceling games, ending projects and laying off 5% of its workforce](https://forum.kerbalspaceprogram.com/topic/224485-take-two-interactive-rockstar-2k-private-division-canceling-games-ending-projects-and-laying-off-5-of-its-workforce/)
 		- [Bad Gateway,Possible End,Theories,Solutions.](https://forum.kerbalspaceprogram.com/topic/225145-bad-gatewaypossible-endtheoriessolutions/#comment-4404679)
 		- [An update of sorts from your forum moderation team.](https://forum.kerbalspaceprogram.com/topic/225365-an-update-of-sorts-from-your-forum-moderation-team/)
+		- [500,000 Books Have Been Deleted From The Internet Archive’s Lending Library](https://www.techdirt.com/2024/06/20/500000-books-have-been-deleted-from-the-internet-archives-lending-library/)
 * Toolset
 	+ [`pywb`](https://github.com/webrecorder/pywb) Core Python Web Archiving Toolkit for replay and recording of web archives 
 		- [Manual](https://pywb.readthedocs.io/en/latest/manual/)
@@ -87,6 +92,7 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 	+ [`waybackpack`](https://github.com/jsvine/waybackpack) Download the entire Wayback Machine archive for a given URL. 
 	+ [`scrapy`](https://scrapy.org/) An open source and collaborative
 * Known publicly available efforts
+	+ [Internet Archive](https://web.archive.org/web/*/forum.kerbalspaceprogram.com)
 	+ [forum.kerbalspaceprogram.com_202305](https://archive.org/details/forum.kerbalspaceprogram.com_202305)
 	+ [bizzehdee's dataset](https://github.com/bizzehdee/kspforumdata)
 * Relevant Material
