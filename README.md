@@ -11,6 +11,8 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 * [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
 * Documentation	
 	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/mestre/README.md)
+	+ [Theory of Operation](./Docs/Theory.md)
+	+ [Install](./Docs/Install.md) instructions for the whole stack
 	+ [Tools](./Docs/Tools.md)
 
 
