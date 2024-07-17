@@ -17,7 +17,7 @@ Here: [download-forum.kerbalspaceprogram.com_202305](../Source/bash/download-for
 ## Extracting all URLs archived from the WARC files
 
 ```
-cat *.WARC | grep -a "WARC-Target-URI" | sed 's/WARC-Target-URI: //' > uri.txt
+cat *.WARC | grep -a "WARC-Target-URI" | sed 's/WARC-Target-URI: //' | sort | uniq > uri.txt
 
 ```
 
