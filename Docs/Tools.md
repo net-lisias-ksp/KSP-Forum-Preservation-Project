@@ -24,7 +24,7 @@ cat forum.kerbalspaceprogram.com-2024* | grep -a "WARC-Target-URI" | sed 's/WARC
 ## Listing all images from the `<img src="">` tags from the html archived on the WARC files.
 
 ```
-cat forum.kerbalspaceprogram.com-2024* | grep -Po '<img[^>]*src="\K[^"]*(?=")' | sort | uniq > imgs.txt
+cat forum.kerbalspaceprogram.com-2024* | grep -Poa '<img[^>]*src="\K[^"]*(?=")' | sort | uniq > imgs.txt
 ```
 
 ## Listing all `Content-Type`s from the WARC files.
