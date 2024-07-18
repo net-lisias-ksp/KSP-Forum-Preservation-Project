@@ -3,12 +3,13 @@ from typing import Iterable
 import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
+from scrapy.selector import Selector
 
 import crawler
 
 class MySpider(CrawlSpider):
 	name = 'forum.kerbalspaceprogram.com'
-	allowed_domains = ['forum.kerbalspaceprogram.com']
+	allowed_domains = ['forum.kerbalspaceprogram.com', 'kerbal-forum-uploads.s3.us-west-2.amazonaws.com']
 	start_urls = ['https://forum.kerbalspaceprogram.com/']
 	custom_settings = {
 		'AUTOTHROTTLE_ENABLED': True,
@@ -29,5 +30,14 @@ class MySpider(CrawlSpider):
 	)
 
 	def parse_item(self, response):
-		print(response.url)
-		return {'url': response.url}
+#		print(response.url)
+		urls = response.css('link::attr(href)').getall()
+		urls += response.css('script::attr(src)').getall()
+		urls += response.css('img::attr(src)').getall()
+		for link in urls:
+#			print (link)
+			if not link.startswith("http"):
+				link = f"https:{link}"
+			yield {'url': link}
+		yield {'url': response.url}
+
