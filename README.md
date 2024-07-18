@@ -104,6 +104,7 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 		- [`outbackcdx`](https://github.com/nla/outbackcdx) Web archive index server based on RocksDB 
 		- [`cdxj-indexer`](https://github.com/webrecorder/cdxj-indexer) CDXJ Indexing of WARC/ARCs 
 	+ [`waybackpack`](https://github.com/jsvine/waybackpack) Download the entire Wayback Machine archive for a given URL. 
+	+ [`waybackpy`](https://github.com/akamhy/waybackpy) Wayback Machine API interface & a command-line tool
 	+ [`scrapy`](https://scrapy.org/) An open source and collaborative
 * Known publicly available efforts
 	+ [Internet Archive](https://web.archive.org/web/*/forum.kerbalspaceprogram.com)

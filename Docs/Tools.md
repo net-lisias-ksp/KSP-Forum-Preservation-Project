@@ -14,6 +14,13 @@ So I made this little script to download that huge basket of bytes using wget wi
 Here: [download-forum.kerbalspaceprogram.com_202305](../Source/bash/download-forum.kerbalspaceprogram.com_202305.sh)
 
 
+## Dumping a URL from IA's into a local WARC
+
+Source: https://github.com/openzim/warc2zim/issues/95#issuecomment-1166366024
+
+Here: [wayback_dl.sh](../Source/bash/wayback_dl.sh)
+
+
 ## Extracting all URLs archived from the WARC files
 
 ```
@@ -36,6 +43,8 @@ cat *.warc | grep -ae "^Content-Type: " | sed '/msgtype/d' | sort | uniq
 ## Internet Archive
 
 The following commandline will dump the CDX for the pages archived by `archive.org` from the Forum. It's a good benchmark to compare with our own results.
+
+> ATTENTION: This tool is currently untested!
 
 ```
 curl http://web.archive.org/cdx/search/cdx?url=forum.kerbalspaceprogram.com/* > ia.forum-kerbalspaceprogram-com.cdx
