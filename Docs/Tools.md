@@ -61,3 +61,19 @@ cat ia.forum-kerbalspaceprogram-com.cdx | cut -d' ' -f 3 | sort | uniq > ia.uri.
 ## `pywb` a Python Web Archiving Toolkit for replay and recording of web archives
 
 wip
+
+
+## `lrzip` the best compression tool available today.
+
+To compress all WARC files with maximum compression, preserving the original:
+
+	lrz -z --best --keep *.warc
+
+To decompress
+
+	lrz --decompress --keep *.lrz
+
+**ATTENTION**: this thing is **ssslloooowwwww**, but it gives us the best compression ratio available nowadays.
+
+We are dealing with huge data files that will be shared between many, many people. This is going to save a lot of money for AWS users.
+
