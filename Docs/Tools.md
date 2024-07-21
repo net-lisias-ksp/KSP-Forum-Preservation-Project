@@ -24,14 +24,14 @@ Here: [wayback_dl.sh](../Source/bash/wayback_dl.sh)
 ## Extracting all URLs archived from the WARC files
 
 ```
-cat forum.kerbalspaceprogram.com-2024* | grep -a "WARC-Target-URI" | sed 's/WARC-Target-URI: //' | dos2unix | sort | uniq > uri.txt
+cat *.warc | grep -a "WARC-Target-URI" | sed 's/WARC-Target-URI: //' | dos2unix | sort | uniq > uri.txt
 
 ```
 
 ## Listing all images from the `<img src="">` tags from the html archived on the WARC files.
 
 ```
-cat forum.kerbalspaceprogram.com-2024* | grep -Poa '<img[^>]*src="\K[^"]*(?=")' | dos2unix | sort | uniq > imgs.txt
+cat *.warc | grep -Poa '<img[^>]*src="\K[^"]*(?=")' | dos2unix | sort | uniq > imgs.txt
 ```
 
 ## Listing all `Content-Type`s from the WARC files.
