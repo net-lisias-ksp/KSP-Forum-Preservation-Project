@@ -15,10 +15,13 @@ class MySpider(CrawlSpider):
 		'AUTOTHROTTLE_ENABLED': True,
 		'AUTOTHROTTLE_START_DELAY': 1,
 		'AUTOTHROTTLE_MAX_DELAY': 300,	# 5 Minutes
+		'CONCURRENT_REQUESTS': 64,
+		'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
 		'RETRY_TIMES': 1024,
 		'DOWNLOADER_MIDDLEWARES': {
 			'crawler.CustomProxyMiddleware': 350,
 		},
+		'DUPEFILTER_CLASS': 'crawler.SeenURLFilter',
 		'USER_AGENT': "Mozilla/5.0 (Linux; x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
 		'DEFAULT_REQUEST_HEADERS': {
 			"Accept-Encoding": "identity"
