@@ -1,4 +1,4 @@
-from typing import Iterable
+import logging
 
 import scrapy
 from scrapy.spiders import CrawlSpider, Rule
@@ -38,12 +38,12 @@ class MySpider(CrawlSpider):
 	)
 
 	def parse_item(self, response):
-		print(response.url)
+		logging.debug("Parsing item: {:s}".format(response.url))
 		urls = list()
-		#urls += response.css('link::attr(href)').getall()
+		urls += response.css('link::attr(href)').getall()
 		urls += response.css('script::attr(src)').getall()
 		urls += response.css('img::attr(src)').getall()
 		for link in urls:
-			print (link)
+			logging.debug("fetched link {:s} for file scraping.".format(link))
 			yield { 'file_urls': [response.urljoin(link)] }
 		yield {'url': response.url}

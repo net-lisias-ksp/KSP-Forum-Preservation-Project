@@ -1,5 +1,6 @@
 import os, time
 from urllib.parse import urlparse
+import logging
 import scrapy
 import scrapy.pipelines.files
 from scrapy.dupefilters import RFPDupeFilter
@@ -30,7 +31,7 @@ class CustomProxyMiddleware(object):
 			if not selector in self.proxy:
 				selector = '*'
 			request.meta['proxy'] = self.proxy[selector]
-		print ("** SELECTED", request.meta['proxy'])
+		logging.debug("SELECTED PROXY {:s} for {:s}".format(request.meta['proxy'], request.url))
 
 	def get_proxy(self):
 		return self.proxy['*']
@@ -46,7 +47,7 @@ class SeenURLFilter(RFPDupeFilter):
 				line = f.readline()
 				if not line: break
 				r.add(line)
-		print("Total entries from ignore-list", len(r))
+		logging.info("Total entries read from ignore-list: {:d}".format(len(r)))
 		return r
 
 	def __init__(self, path:str = None, debug: bool = False, *, fingerprinter:[scrapy.utils.request.RequestFingerprinterProtocol] = None):
@@ -56,7 +57,7 @@ class SeenURLFilter(RFPDupeFilter):
 	def request_seen(self, request):
 		return False
 		if request.url in self.urls_seen:
-			print("Entry {:s} was ignored as duplicated.".format(request.url))
+			logging.debug("Entry {:s} was ignored as duplicated.".format(request.url))
 			return True
 		self.urls_seen.add(request.url)
 
@@ -68,7 +69,7 @@ class DevNullFilesStore(scrapy.pipelines.files.FSFilesStore):
 	def persist_file(
 		self, path:str, buf, info, meta=None, headers=None
 	):
-		print("Faking storing file:{:s}".Format(path))
+		logging.debug("Faking storing file: {:s}".format(path))
 
 	def stat_file(self, path:str, info):
 		return {"last_modified": 0, "checksum": 0}
