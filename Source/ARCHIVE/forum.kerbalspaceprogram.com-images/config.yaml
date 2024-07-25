@@ -41,5 +41,5 @@ recorder:
     cache: always
 #    dedup_policy: revisit
     dedup_policy: skip
-    dedup_index_url: redis://macmini62:6379/0/pywb:forum-kerbalspaceprogram-com:cdxj
+    dedup_index_url: redis://macmini62:6379/0/pywb:forum.kerbalspaceprogram.com:cdxj
     autoindex: 30
