@@ -25,7 +25,7 @@ collections:
     live: $live
 
 proxy:
-    coll: forum-kerbalspaceprogram-com-images
+    coll: forum-kerbalspaceprogram-com
     enable_banner: false
     enable_wombat: false
     enable_content_rewrite: false
