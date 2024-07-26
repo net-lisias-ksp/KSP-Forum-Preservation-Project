@@ -10,26 +10,30 @@ from scrapy.dupefilters import RFPDupeFilter
 #wayback --record --proxy forum-kerbalspaceprogram-com-styles  -p 8082 -b steamdeck
 
 class CustomProxyMiddleware(object):
+	IMAGES_EXT = set(['gif', 'png', 'jpg', 'jpeg', 'webp', 'svg'])
+	STYLES_EXT = set(['css', 'woff', 'woff2', 'js'])
+
 	def __init__(self):
 		self.proxy = dict()
 		self.proxy['*'] = 'http://steamdeck:8080'
-		self.proxy['gif'] = 'http://steamdeck:8081'
-		self.proxy['png'] = 'http://steamdeck:8081'
-		self.proxy['jpg'] = 'http://steamdeck:8081'
-		self.proxy['jpeg'] = 'http://steamdeck:8081'
-		self.proxy['webp'] = 'http://steamdeck:8081'
-		self.proxy['svg'] = 'http://steamdeck:8081'
-		self.proxy['css'] = 'http://steamdeck:8082'
-		self.proxy['woff2'] = 'http://steamdeck:8082'
-		self.proxy['js'] = 'http://steamdeck:8082'
+		self.proxy['images'] = 'http://steamdeck:8081'
+		self.proxy['styles'] = 'http://steamdeck:8082'
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
 			path = urlparse(request.url).path
-			ext = os.path.splitext(path)[1]
-			selector = ext[1:].lower()
+			ext = os.path.splitext(path)[1].lower()
+			print(path, '----', ext)
+			selector = '*'
+			if ext in CustomProxyMiddleware.IMAGES_EXT:
+				selector = 'images'
+			elif ext in CustomProxyMiddleware.STYLES_EXT:
+				selector = 'styles'
+			elif 'uploads.s3.us-west-2.amazonaws.com' in path:
+				selector = 'images'
 			if not selector in self.proxy:
 				selector = '*'
+
 			request.meta['proxy'] = self.proxy[selector]
 		logging.debug("SELECTED PROXY {:s} for {:s}".format(request.meta['proxy'], request.url))
 
