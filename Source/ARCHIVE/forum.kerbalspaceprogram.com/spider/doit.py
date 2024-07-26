@@ -46,4 +46,4 @@ class MySpider(CrawlSpider):
 		for link in urls:
 			logging.debug("fetched link {:s} for file scraping.".format(link))
 			yield { 'file_urls': [response.urljoin(link)] }
-		yield {'url': response.url, 'file_urls': [response.urljoin(link)]}
+		yield { 'file_urls': [response.urljoin(link)] }
