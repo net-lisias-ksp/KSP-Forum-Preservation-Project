@@ -21,15 +21,14 @@ class CustomProxyMiddleware(object):
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
-			path = urlparse(request.url).path
-			ext = os.path.splitext(path)[1].lower()
-			print(path, '----', ext)
+			parsed_url = urlparse(request.url)
+			ext = os.path.splitext(parsed_url.path)[1].lower()
 			selector = '*'
 			if ext in CustomProxyMiddleware.IMAGES_EXT:
 				selector = 'images'
 			elif ext in CustomProxyMiddleware.STYLES_EXT:
 				selector = 'styles'
-			elif 'uploads.s3.us-west-2.amazonaws.com' in path:
+			elif '.amazonaws.com' in parsed_url.netloc:
 				selector = 'images'
 			if not selector in self.proxy:
 				selector = '*'
