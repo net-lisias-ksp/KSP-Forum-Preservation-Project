@@ -40,6 +40,21 @@ cat *.warc | grep -Poa '<img[^>]*src="\K[^"]*(?=")' | dos2unix | sort | uniq > i
 cat *.warc | grep -ae "^Content-Type: " | sed '/msgtype/d' | dos2unix | sort | uniq
 ```
 
+### Summarising them
+
+```
+for f in *.warc ; do echo $f; cat $f | grep -a "^Content-Type:" | sort | uniq -c ; echo ""; done
+```
+
+## Summarising all archived URI's from the WARC files.
+
+```
+for f in *.warc ; do echo $f; cat $f | grep -a "^WARC-Target-URI:" | sort | uniq -c ; echo ""; done
+```
+
+Note: each URI **must** have a **even** count, otherwise the WARC file is damaged. Divide the count by 2 to get how many times that URL is present on the WARC file.
+
+
 ## Internet Archive
 
 The following commandline will dump the CDX for the pages archived by `archive.org` from the Forum. It's a good benchmark to compare with our own results.
