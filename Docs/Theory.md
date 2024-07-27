@@ -13,28 +13,60 @@ Of course, these are only the file formats. We need tools to filler them up.
 There're many but, for our current purposes, `pywb` was chosen. This, and the other tools needed to a full setup will be described below.
 
 
-## `pywb`
+## Architecture
+
+It was decided to implement the solution in a somewhat convoluted way, recording concomitantly into 3 distinct collections:
+
+* Content
+* Images (and videos)
+* Styles (css et all)
+
+`pywb` allows us to dynamically merge the collections and serve them on a single front-end, as they were just one. Pretty convenient, and it was what allowed me to try this stunt at first place.
+
+The rationale for this decision is simple besides not exactly straightforward: images almost never changes, as well styles. Scrapping them separately will save a bit of Forum's resources and scrapping time while updating the collections, as the media will rarely (if ever) change. Same for styles.
+
+So one can just ignore them while refreshing the archive contents, focusing on what matters most. 
+
+There's an additional benefit on keeping textual info separated from images and styles: whoever owns the Intellectual Property, owns the images and styles, **but not the textual contents**. Posts on Forum _**are** almost unrestrictedly and perpetually **licensed**_ to the Forum's owner, but they still belong to the original poster. So whoever owns the IP, at least theoretically, have no legal grounds to take down these content - assuming the worst scenario, where this Forum goes titties up and a new owner decides to take down the Forum mirrors, they will be able to do so only for the material they own - images and styling. And these we can easily replace later, forging a new WARC file pretending being that, now lost, content.
+
+Ok, ok, on Real Life™ things doesn't work exactly like that. But it costs very little (if any) to take some preventive measures, no?
+
+At least, there's still an another reason to separate these contents: compression.
+
+My initial attempts let videos pass trough the filters and be stored together the textual content, and - boy... - this royally screwed up compression. The [scraps from 2023](../README.md#References) were being compressed at +/- 44/1 ratio, but my owns were being compressed "only" at 20/1.
+
+The videos injected on the textual content were the culprit!
+
+
+## Tools
+
+### `pywb`
 
 `pywb` have two different operating modes: **recording** and **`**replaying**`**.
 
 
-### `pywb` in recording mode
+#### `pywb` in replaying mode
 
 wip
 
-#### redis
-
-wip
-
-### `pywb` in replaying mode
-
-wip
-
-#### cdx-server
+##### cdx-server
 
 wip
 
 
-## `scrapy`
+#### `pywb` in recording mode
+
+wip
+
+##### redis
+
+wip
+
+### `scrapy`
+
+wip
+
+
+## Implementation
 
 wip
