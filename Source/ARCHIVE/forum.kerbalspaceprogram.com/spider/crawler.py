@@ -11,23 +11,31 @@ from scrapy.dupefilters import RFPDupeFilter
 
 class CustomProxyMiddleware(object):
 	IMAGES_EXT = set(['gif', 'png', 'jpg', 'jpeg', 'webp', 'svg'])
+	MEDIA_EXT = set(['mov', 'mp4', 'mp3', 'mp2', 'avi'])
 	STYLES_EXT = set(['css', 'woff', 'woff2', 'js'])
 
 	def __init__(self):
 		self.proxy = dict()
 		self.proxy['*'] = 'http://steamdeck:8080'
-		self.proxy['images'] = 'http://steamdeck:8081'
-		self.proxy['styles'] = 'http://steamdeck:8082'
+		self.proxy['images'] = 'http://steamdeck:8082'
+		self.proxy['media'] = self.proxy['images']
+		self.proxy['styles'] = 'http://steamdeck:8083'
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
 			parsed_url = urlparse(request.url)
-			ext = os.path.splitext(parsed_url.path)[1].lower()
+			if parsed_url.path.startswith('/applications/core/interface/file/cfield.php'):
+				query = dict([(k,v) for k,v in [x.split('=') for x in parsed_url.query.split('&')]])
+				ext = os.path.splitext(query['path'])[1].lower()
+			else:
+				ext = os.path.splitext(parsed_url.path)[1].lower()
 			selector = '*'
 			if ext in CustomProxyMiddleware.IMAGES_EXT:
 				selector = 'images'
 			elif ext in CustomProxyMiddleware.STYLES_EXT:
 				selector = 'styles'
+			elif ext in CustomProxyMiddleware.MEDIA_EXT:
+				selector = 'media'
 			elif '.amazonaws.com' in parsed_url.netloc:
 				selector = 'images'
 			if not selector in self.proxy:
