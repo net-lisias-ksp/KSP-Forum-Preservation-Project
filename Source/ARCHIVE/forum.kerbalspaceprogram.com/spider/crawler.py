@@ -66,7 +66,6 @@ class SeenURLFilter(RFPDupeFilter):
 		RFPDupeFilter.__init__(self, path)
 
 	def request_seen(self, request):
-		return False
 		if request.url in self.urls_seen:
 			logging.debug("Entry {:s} was ignored as duplicated.".format(request.url))
 			return True
