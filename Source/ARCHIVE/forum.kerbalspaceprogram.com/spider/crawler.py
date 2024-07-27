@@ -36,7 +36,7 @@ class CustomProxyMiddleware(object):
 				selector = 'styles'
 			elif ext in CustomProxyMiddleware.MEDIA_EXT:
 				selector = 'media'
-			elif '.amazonaws.com' in parsed_url.netloc:
+			elif parsed_url.netloc.startswith('kerbal-forum-uploads'): # current netloc is kerbal-forum-uploads.s3.us-west-2.amazonaws.com
 				selector = 'images'
 			if not selector in self.proxy:
 				selector = '*'
