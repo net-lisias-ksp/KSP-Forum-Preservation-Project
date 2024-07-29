@@ -7,8 +7,9 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## In a Hurry
 
+* [Download](https://archive.org/details/KSP-Forum-Preservation-Project)
 * [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
-* [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
+	+ [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
 * Documentation	
 	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/mestre/README.md)
 	+ [Theory of Operation](./Docs/Theory.md)
