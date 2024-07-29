@@ -2,3 +2,5 @@ __pycache__
 *.pyc
 *.pickle
 *.pem
+torrent/**/*.lrz
+torrent/**/*.sig
