@@ -98,6 +98,7 @@ To decompress
 We are dealing with huge data files that will be shared between many, many people. This is going to save a lot of money for AWS users.
 
 
+
 ## `transmission-daemon` as (command line) torrent client
 
 wip
@@ -105,3 +106,17 @@ wip
 	transmissioncli -n folder.name.here -a udp://tracker.example.com:80 -w /home/user/test.torrent
 
 hint: mutable torrents (BEP46)
+
+
+### Signing the files to prevent tampering.
+
+wip
+
+	f=[file_to_sign]
+	ssh-keygen -Y sign -f [keypath] -n $f.sig $f
+
+
+### Verifying file signatures
+
+	for f in *.lrz; do ssh-keygen -Y verify -f ./allowed_signers -I net.lisias.ksp-Forum-Preservation-Project -n $f.sig -s $f.sig < $f ; done
+

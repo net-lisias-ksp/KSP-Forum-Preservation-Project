@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+HERE=$(dirname $0)
+HERE=$(readlink --canonicalize $HERE)
+ROOT=/..
+SSHDATA=${ROOT}/var/ssh
+
+verify() {
+	ssh-keygen -Y verify -f ${SSHDATA}/allowed_signers -I net.lisias.ksp-Forum-Preservation-Project -n $1.sig -s $1.sig < $1
+}
+
+CMD=$1
+TARGET=$2
+
