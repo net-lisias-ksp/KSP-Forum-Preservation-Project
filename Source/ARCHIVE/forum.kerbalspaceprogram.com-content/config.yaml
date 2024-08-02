@@ -37,9 +37,10 @@ recorder:
     rollover_idle_secs: 3600
     filename_template: 'forum.kerbalspaceprogram.com-{timestamp}.warc'
     source_filter: live
+    skip_filters: Http4xx;Http5xx
     enable_put_custom_record: false
     cache: always
 #    dedup_policy: revisit
-    dedup_policy: skip
+    dedup_policy: revisit:older(1w)
     dedup_index_url: redis://macmini62:6379/0/pywb:forum.kerbalspaceprogram.com:cdxj
     autoindex: 30
