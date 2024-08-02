@@ -78,6 +78,11 @@ cat ia.forum-kerbalspaceprogram-com.cdx | cut -d' ' -f 3 | sort | uniq > ia.uri.
 wip
 
 
+## `scrappy`
+
+	scrapy runspider doit.py -s JOBDIR=./forum.kerbalspaceprogram.com
+
+
 ## `lrzip` the best compression tool available today.
 
 To compress all WARC files with maximum compression, preserving the original:
