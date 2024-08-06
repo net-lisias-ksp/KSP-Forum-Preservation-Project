@@ -4,3 +4,4 @@ __pycache__
 *.pem
 torrent/**/*.lrz
 torrent/**/*.sig
+torrent/**/*.warc
