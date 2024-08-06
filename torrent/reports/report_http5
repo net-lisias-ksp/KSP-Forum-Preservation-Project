@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+SOURCE_DIR=../KSP-Forum-Preservation-Project
+#python report_http5.py $SOURCE_DIR | sort | uniq > ./report_http5.csv
+cat ./report_http5.csv | cut -d $'\t' -f1 | awk '{ print(substr($0, 0,13)); }' | uniq -c | awk '{ print($2"\t"$1); }' | sed 's/T/\t/g' > ./report_http5_by_hour.csv
