@@ -5,39 +5,47 @@ import scrapy
 import scrapy.pipelines.files
 from scrapy.dupefilters import RFPDupeFilter
 
-#wayback --record --proxy forum-kerbalspaceprogram-com-content  -p 8080 -b steamdeck
-#wayback --record --proxy forum-kerbalspaceprogram-com-images  -p 8081 -b steamdeck
-#wayback --record --proxy forum-kerbalspaceprogram-com-styles  -p 8082 -b steamdeck
+#wayback --record --proxy forum-kerbalspaceprogram-com-content  -p 8082 -b steamdeck
+#wayback --record --proxy forum-kerbalspaceprogram-com-images  -p 8083 -b steamdeck
+#wayback --record --proxy forum-kerbalspaceprogram-com-styles  -p 8084 -b steamdeck
+#wayback --record --proxy forum-kerbalspaceprogram-com-files  -p 8085 -b steamdeck
 
 class CustomProxyMiddleware(object):
 	IMAGES_EXT = set(['gif', 'png', 'jpg', 'jpeg', 'webp', 'svg'])
-	MEDIA_EXT = set(['mov', 'mp4', 'mp3', 'mp2', 'avi'])
+	MEDIA_EXT = set(['mov', 'mp4', 'mp3', 'mp2', 'avi', 'mkv'])
 	STYLES_EXT = set(['css', 'woff', 'woff2', 'js'])
+	FILES_EXT = set(['zip', 'rar', 'arj', 'lrz', 'gz', 'bz2', 'xml', 'txt', 'craft'])
 
 	def __init__(self):
 		self.proxy = dict()
-		self.proxy['*'] = 'http://steamdeck:8080'
-		self.proxy['images'] = 'http://steamdeck:8082'
+		self.proxy['*'] = 'http://steamdeck:8082'
+		self.proxy['images'] = 'http://steamdeck:8083'
 		self.proxy['media'] = self.proxy['images']
-		self.proxy['styles'] = 'http://steamdeck:8083'
+		self.proxy['styles'] = 'http://steamdeck:8084'
+		self.proxy['files'] = 'http://steamdeck:8085'
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
+			selector = '*'
 			parsed_url = urlparse(request.url)
 			if parsed_url.path.startswith('/applications/core/interface/file/cfield.php'):
 				query = dict([(k,v) for k,v in [x.split('=') for x in parsed_url.query.split('&')]])
 				ext = os.path.splitext(query['path'])[1].lower()
+				selector = 'files'	# Anything from this interface should be considered `file` unless we recognize the file extension
 			else:
 				ext = os.path.splitext(parsed_url.path)[1].lower()
-			selector = '*'
+			ext = ext[1:]
 			if ext in CustomProxyMiddleware.IMAGES_EXT:
 				selector = 'images'
 			elif ext in CustomProxyMiddleware.STYLES_EXT:
 				selector = 'styles'
 			elif ext in CustomProxyMiddleware.MEDIA_EXT:
 				selector = 'media'
+			elif ext in CustomProxyMiddleware.FILES_EXT:
+				selector = 'files'
 			elif parsed_url.netloc.startswith('kerbal-forum-uploads'): # current netloc is kerbal-forum-uploads.s3.us-west-2.amazonaws.com
 				selector = 'images'
+
 			if not selector in self.proxy:
 				selector = '*'
 
