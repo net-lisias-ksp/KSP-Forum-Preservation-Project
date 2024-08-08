@@ -5,7 +5,6 @@ verify() {
 }
 
 
-verify allowed_signers
-for f in *.lrz ;  do
-	verify $f
+for f in *.sig ;  do
+	verify ${f/\.sig/}
 done
