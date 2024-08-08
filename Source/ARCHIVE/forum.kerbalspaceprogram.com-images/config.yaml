@@ -35,11 +35,10 @@ recorder:
     source_coll: forum-kerbalspaceprogram-com-images
     rollover_size: 10000000000
     rollover_idle_secs: 3600
-    filename_template: 'forum.kerbalspaceprogram.com-images-{timestamp}.warc'
+    filename_template: 'forum.kerbalspaceprogram.com-{timestamp}-images.warc'
     source_filter: live
     enable_put_custom_record: false
     cache: always
-#    dedup_policy: revisit
     dedup_policy: skip
     dedup_index_url: redis://macmini62:6379/0/pywb:forum.kerbalspaceprogram.com:cdxj
     autoindex: 30
