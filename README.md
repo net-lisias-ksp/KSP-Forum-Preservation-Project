@@ -114,7 +114,7 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 * Relevant Material
 	+ [Welcome to the Internet Archive Developer Portal](https://archive.org/developers/index.html)
 		- [Internet Archive Tasks API](https://archive.org/developers/tasks.html)
-	+ [nternetarchive on github](https://github.com/orgs/internetarchive/repositories)
+	+ [Internetarchive on github](https://github.com/orgs/internetarchive/repositories)
 	+ [Wayback Archiver](https://github.com/wabarc)
 	+ [iipc's Awesome Web Archiving document](https://github.com/iipc/awesome-web-archiving)
 	+ [Warchaelogy](https://nlnwa.github.io/warchaeology/) - in go
