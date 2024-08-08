@@ -25,18 +25,19 @@ collections:
     live: $live
 
 proxy:
-    coll: forum-kerbalspaceprogram-com-styles
+    coll: forum-kerbalspaceprogram-com-files
     enable_banner: false
     enable_wombat: false
     enable_content_rewrite: false
     recording: true
 
 recorder:
-    source_coll: forum-kerbalspaceprogram-com-styles
+    source_coll: forum-kerbalspaceprogram-com-files
     rollover_size: 10000000000
     rollover_idle_secs: 3600
-    filename_template: 'forum.kerbalspaceprogram.com-{timestamp}-styles.warc'
+    filename_template: 'forum.kerbalspaceprogram.com-{timestamp}-files.warc'
     source_filter: live
+    skip_filters: Http4xx;Http5xx
     enable_put_custom_record: false
     cache: always
     dedup_policy: skip
