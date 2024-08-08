@@ -26,31 +26,42 @@ class CustomProxyMiddleware(object):
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
-			selector = '*'
-			parsed_url = urlparse(request.url)
-			if parsed_url.path.startswith('/applications/core/interface/file/cfield.php'):
-				query = dict([(k,v) for k,v in [x.split('=') for x in parsed_url.query.split('&')]])
-				ext = os.path.splitext(query['path'])[1].lower()
-				selector = 'files'	# Anything from this interface should be considered `file` unless we recognize the file extension
-			else:
-				ext = os.path.splitext(parsed_url.path)[1].lower()
-			ext = ext[1:]
-			if ext in CustomProxyMiddleware.IMAGES_EXT:
-				selector = 'images'
-			elif ext in CustomProxyMiddleware.STYLES_EXT:
-				selector = 'styles'
-			elif ext in CustomProxyMiddleware.MEDIA_EXT:
-				selector = 'media'
-			elif ext in CustomProxyMiddleware.FILES_EXT:
-				selector = 'files'
-			elif parsed_url.netloc.startswith('kerbal-forum-uploads'): # current netloc is kerbal-forum-uploads.s3.us-west-2.amazonaws.com
-				selector = 'images'
-
+			selector = CustomProxyMiddleWare.categorise_url(request.url)
 			if not selector in self.proxy:
 				selector = '*'
-
 			request.meta['proxy'] = self.proxy[selector]
 		logging.debug("SELECTED PROXY {:s} for {:s}".format(request.meta['proxy'], request.url))
+
+	@staticmethod
+	def categorise_url(url:str) -> str:
+		selector = '*'
+		parsed_url = urlparse(url)
+		if parsed_url.path.startswith('/rss/') or parsed_url.path.endswith('.xml/'):
+			selector = 'files'	# Anything from this interface should be considered `file` unless we recognize the file extension
+		if parsed_url.path.startswith('/applications/core/interface/file/cfield.php'):
+			selector = 'files'	# Anything from this interface should be considered `file` unless we recognize the file extension
+
+			# Gambiarra porque algumas queries dos WARC 202305 naoo esta escapando corremente alguns valores, deixando escapar '=' no valor
+			# ex:	storage=form_Fields&path=EveLander03.json&fileKey=%5B!AES128GCM%5B1D1j6A1ts2zIgQb9ajjbVNhz0jx/z8PKKpqI2Af9xB/80dgJ7yKi/4NH3PjlRxz%2BaFPdbMkY7ww5M5/aOTfuypQ=%5D%5B7f09a6443599d2915e973f00%5D%5B1d22bd83286a1710226b28125c28749a%5D%5D
+			#                                                                                                                                                                  ^ Aqui!!!!
+			query = dict([(t[0],t[1:]) for t in [x.split('=') for x in parsed_url.query.split('&')]])
+
+			ext = os.path.splitext(query['path'][0])[1].lower()
+		else:
+			ext = os.path.splitext(parsed_url.path)[1].lower()
+		ext = ext[1:]
+		if ext in CustomProxyMiddleware.IMAGES_EXT:
+			selector = 'images'
+		elif ext in CustomProxyMiddleware.STYLES_EXT:
+			selector = 'styles'
+		elif ext in CustomProxyMiddleware.MEDIA_EXT:
+			selector = 'media'
+		elif ext in CustomProxyMiddleware.FILES_EXT:
+			selector = 'files'
+		elif parsed_url.netloc.startswith('kerbal-forum-uploads'): # current netloc is kerbal-forum-uploads.s3.us-west-2.amazonaws.com
+			selector = 'images'
+
+		return selector
 
 	def get_proxy(self):
 		return self.proxy['*']

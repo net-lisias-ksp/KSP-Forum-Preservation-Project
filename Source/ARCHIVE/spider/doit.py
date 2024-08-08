@@ -14,8 +14,8 @@ class MySpider(CrawlSpider):
 
 	custom_settings = {
 		'AUTOTHROTTLE_ENABLED': True,
-		'AUTOTHROTTLE_START_DELAY': 1,
-		'AUTOTHROTTLE_MAX_DELAY': 300,	# 5 Minutes
+		'AUTOTHROTTLE_START_DELAY': 0.250,
+		'AUTOTHROTTLE_MAX_DELAY': 30,
 		'CONCURRENT_REQUESTS': 64,
 		'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
 		'RETRY_TIMES': 1024,
@@ -40,11 +40,10 @@ class MySpider(CrawlSpider):
 	def parse_item(self, response):
 		logging.debug("Parsing item: {:s}".format(response.url))
 		urls = list()
-		urls += response.css('link::attr(href)').getall()
+		#urls += response.css('link::attr(href)').getall()
 		urls += response.css('script::attr(src)').getall()
 		urls += response.css('img::attr(src)').getall()
 		for link in urls:
 			logging.debug("fetched link {:s} for file scraping.".format(link))
 			yield { 'file_urls': [response.urljoin(link)] }
 		#yield {'url': response.url, 'file_urls': [response.urljoin(link)]}
-		yield { 'file_urls': [response.urljoin(link)] }

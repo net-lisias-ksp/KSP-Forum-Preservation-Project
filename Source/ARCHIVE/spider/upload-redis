@@ -7,6 +7,7 @@ KEY = REDIS_URL.split('/')[-1]
 
 REDIS = redis.StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
+REDIS.delete(KEY)
 for line in sys.stdin:
 	line = line.rstrip()
 	REDIS.zadd(KEY, 0, line)

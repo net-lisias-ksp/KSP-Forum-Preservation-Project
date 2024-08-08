@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+python sanitizer.py ../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com/archive "*"
+python sanitizer.py ../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com-files/archive files dedup-uri
+python sanitizer.py ../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com-images/archive/images images dedup-uri
+python sanitizer.py ../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com-images/archive/media media dedup-uri
+python sanitizer.py ../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com-styles/archive styles dedup-uri

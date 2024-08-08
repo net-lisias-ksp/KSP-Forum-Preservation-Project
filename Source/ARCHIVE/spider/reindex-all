@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+doit() {
+	target=forum.kerbalspaceprogram.com$1
+	pushd ../$target
+	wb-manager reindex "${target//\./-}"
+	popd
+}
+
+for i in -images -files -styles -content ; do
+	doit $i
+done
+
+doit ""
+
