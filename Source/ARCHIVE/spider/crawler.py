@@ -26,7 +26,7 @@ class CustomProxyMiddleware(object):
 
 	def process_request(self, request, spider):
 		if 'proxy' not in request.meta:
-			selector = CustomProxyMiddleWare.categorise_url(request.url)
+			selector = CustomProxyMiddleware.categorise_url(request.url)
 			if not selector in self.proxy:
 				selector = '*'
 			request.meta['proxy'] = self.proxy[selector]
