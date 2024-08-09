@@ -7,6 +7,8 @@ from scrapy.selector import Selector
 
 import crawler
 
+# scrapy runspider doit.py -s JOBDIR=./forum.kerbalspaceprogram.com
+
 class MySpider(CrawlSpider):
 	name = 'forum.kerbalspaceprogram.com'
 	allowed_domains = ['forum.kerbalspaceprogram.com', 'kerbal-forum-uploads.s3.us-west-2.amazonaws.com']

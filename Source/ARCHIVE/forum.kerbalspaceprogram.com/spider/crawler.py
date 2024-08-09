@@ -5,10 +5,10 @@ import scrapy
 import scrapy.pipelines.files
 from scrapy.dupefilters import RFPDupeFilter
 
-#wayback --record --proxy forum-kerbalspaceprogram-com-content  -p 8082 -b steamdeck
-#wayback --record --proxy forum-kerbalspaceprogram-com-images  -p 8083 -b steamdeck
-#wayback --record --proxy forum-kerbalspaceprogram-com-styles  -p 8084 -b steamdeck
-#wayback --record --proxy forum-kerbalspaceprogram-com-files  -p 8085 -b steamdeck
+#wayback --record --proxy forum-kerbalspaceprogram-com-content  -p 8082 -b steamdeck | tee content.log
+#wayback --record --proxy forum-kerbalspaceprogram-com-images  -p 8083 -b steamdeck | tee images.log
+#wayback --record --proxy forum-kerbalspaceprogram-com-styles  -p 8084 -b steamdeck | tee styles.log
+#wayback --record --proxy forum-kerbalspaceprogram-com-files  -p 8085 -b steamdeck | tee files.log
 
 class CustomProxyMiddleware(object):
 	IMAGES_EXT = set(['gif', 'png', 'jpg', 'jpeg', 'webp', 'svg'])
