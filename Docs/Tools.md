@@ -83,7 +83,7 @@ wip
 	scrapy runspider doit.py -s JOBDIR=./forum.kerbalspaceprogram.com
 
 
-## `lrzip` the best compression tool available today.
+### `lrzip` the best compression tool available today.
 
 To compress all WARC files with maximum compression, preserving the original:
 
@@ -99,6 +99,16 @@ To decompress
 
 We are dealing with huge data files that will be shared between many, many people. This is going to save a lot of money for AWS users.
 
+### Rebuilding the ignore files
+
+do a `./sanitize_all` , and then
+
+	cat forum.kerbalspaceprogram.com-2024*.warc.clean | grep -a "^WARC-Target-URI: " | sed "s/^WARC-Target-URI: //g" | sed "s/^\(.+\)#?.+/\1/g" | sort | uniq | dos2unix > <[filename]>.txt
+
+where `<[filename]>` is:
+
+* `crawled_urls` for the list of urls that where already crawled on the current task force. Do it on the `-content` collection.
+* `ignore-list` for the list of the urls that should never be crawled again (this list is committed). Do it on the `-files` and `-images` collections.
 
 
 ## `transmission-daemon` as (command line) torrent client
