@@ -7,7 +7,7 @@ from scrapy.selector import Selector
 
 import crawler
 
-# scrapy runspider doit.py -L INFO -s JOBDIR=./forum.kerbalspaceprogram.com
+# scrapy runspider doit.py -s JOBDIR=./forum.kerbalspaceprogram.com 2>&1 | tee doit.log
 
 class MySpider(CrawlSpider):
 	name = 'forum.kerbalspaceprogram.com'
