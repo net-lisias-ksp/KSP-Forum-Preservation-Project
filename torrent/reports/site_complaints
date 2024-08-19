@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#2024-08-18 15:51:30 [forum.kerbalspaceprogram.com] INFO: Site complained about "502". Retrying <GET https://forum.kerbalspaceprogram.com/topic/160140-122-kolyphemus-system-the-kerbalized-polyhemus/?do=findComment&comment=3107347> in 900 seconds.
+
+find ../spider -name "*.log*" -exec cat {} \; |
+{
+	grep -a "Site complained" | sed -r 's/^(.+) (.+) \[forum.kerbalspaceprogram.com\] INFO: (.+)$/\1\t\2\t\3/g' | sort
+} > site_complaints_log
+
+cat site_complaints_log |
+{
+	sed -r 's/(.+)\t(.+)\t.+\"([0-9]+)\"\. Retrying .+ in ([0-9]+) seconds\./\1\t\2\t\3\t\4/g'
+} > site_complaints_log.waits-per-event.csv
+
+cat site_complaints_log.waits-per-event.csv |
+{
+	sed -r 's/^(.+)\t([0-9]+):[0-9]+:[0-9]+\t([0-9]+)\t.+/\1\t\2\t\3/g' | uniq -c | awk '{ print($2"\t"$3"\t"$4"\t"$1); }'
+} > site_complaints_log.hits-per-hour.csv
+
