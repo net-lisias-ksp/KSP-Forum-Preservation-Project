@@ -89,7 +89,7 @@ To compress all WARC files with maximum compression, preserving the original:
 
 	lrz -z --best --keep *.warc
 	
-	for f in *.warc; do lrz -z --best --keep $f ; touch -r {$f/.lrz/} $f ; done
+	for f in *.warc; do lrz -z --best --keep $f ; touch -r ${f/.lrz/} $f ; done
 
 To decompress
 
