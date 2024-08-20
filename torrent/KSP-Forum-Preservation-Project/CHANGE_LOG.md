@@ -1,5 +1,16 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-0820 : MOAR Cleaning up
+	+ Added `*-legal.warc` file with the Forum's and TTWO's legalese in a single packet
+		- These terms are not hosted on Forum, so I cooked a dedicated spider just for them.
+			- Ended up helping me out to understand some mistakes on the Forum's spider! :)
+		- I don't expect these are going to change anytime soon - but, better safe than sorry.
+	+ Some dirty was found left on the 202407 scrappings. Cleaned them out.
+		- The `HTTP 301 Moved Permanently` records were moved into dedicated `WARC` files to facilitate intenal proceedings.
+		- Revisits with same digest profile are now cleaned out from the `WARCball`.
+			- This is saving a lot of space!
+	+ Removed `redis.dump` as it became outdated and regenerating it for an old release is cumbersome.
+		- Use `redo-redis` after updating your `WARC` files.
 * 2024-0807 : Ubber Sanitizing & Republish
 	+ Previous content was further audited, sanitized and cleaned up
 		- Removed `HTTP 4xx` responses (and respective requests)
