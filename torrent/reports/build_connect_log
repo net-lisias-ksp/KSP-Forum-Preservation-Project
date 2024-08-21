@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-find .. -name "*.log" -exec cat {} \; |
+find .. -name "*.log*" -exec cat {} \; |
 {
 	grep -a "CONNECT" | sed -r 's/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ - - //g' | sort | sed -r 's/\[(.+)\] "(.+)" (.+) (.+) (.+)/\1\t\2\t\3\t\4\t\5/g'
 } > connect_log
