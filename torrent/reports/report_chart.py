@@ -37,36 +37,59 @@ def cvs_load_complaints(name:str) -> dict:
 			r[kind][timestamp] = count
 	return r
 
-def normalize_dataset(dataset:dict, target:datetime.datetime, fill_hours:bool=False) -> dict:
+def normalize_dataset_hourly(dataset:dict, target:datetime.datetime) -> dict:
 	for d in dataset:
 		dataset[d] = { k:v for k, v in dataset[d].items() if k >= target }
 
 	all_keys = set()
 	for i in dataset:
 		all_keys.update(dataset[i].keys())
-	if fill_hours:
-		d = min(all_keys)
-		end = max(all_keys)
-		while d < end:
-			if d not in all_keys:
-				all_keys.add(d)
-			d = d + datetime.timedelta(hours=1)
+
+	d = min(all_keys)
+	end = max(all_keys)
+	while d < end:
+		if d not in all_keys:
+			all_keys.add(d)
+		d = d + datetime.timedelta(hours=1)
+
 	for i in all_keys:
 		for j in dataset:
 			if i not in dataset[j]: dataset[j][i]=0
 	return dataset
 				
-def plot(data:dict, name:str, kind):
-	fn = "report_chart-" + name.replace(' ', '-') + ".png"
+def normalize_dataset_minutely(dataset:dict, target:datetime.datetime) -> dict:
+	for d in dataset:
+		dataset[d] = { k:v for k, v in dataset[d].items() if k >= target }
 
-	chart = kind(width=2400, x_label_rotation=45, show_minor_x_labels=False)
+	all_keys = set()
+	for i in dataset:
+		all_keys.update(dataset[i].keys())
+
+	d = min(all_keys)
+	end = max(all_keys)
+	while d < end:
+		if d not in all_keys:
+			all_keys.add(d)
+		d = d + datetime.timedelta(minutes=1)
+
+	for i in all_keys:
+		for j in dataset:
+			if i not in dataset[j]: dataset[j][i]=0
+	return dataset
+
+def plot(data:dict, name:str, kind, labels_filter:callable):
+	now = datetime.datetime.now()
+	timestamp = "{:04d}{:02d}{:02d}".format(now.year, now.month, now.day)
+	fn = "report_chart." + timestamp + "." + name.replace(' ', '-') + ".png"
+
+	chart = kind(width=2400, legend_at_bottom=True, x_label_rotation=45, show_minor_x_labels=False)
 	chart.title = name
 
 	sd = set()
 	for k in data:
 		sd.update(data[k].keys())
 	sd = sorted(sd)
-	chart.x_labels_major = [d for d in sd if 0 == d.minute and 0 == d.second]
+	chart.x_labels_major = labels_filter(sd)
 	chart.x_labels = sd
 	if sd[0] not in chart.x_labels_major:
 		chart.x_labels_major.insert(0,sd[0])
@@ -90,14 +113,15 @@ def main():
 	connections = dict()
 	connections['connections'] = connect
 
-	normalize_dataset(connections, target)
-	normalize_dataset(complaints, target, True)
+	normalize_dataset_minutely(connections, target)
+	normalize_dataset_hourly(complaints, target)
 
-	plot(connections, "Connections", pygal.Bar)
-	plot(complaints, "Events", pygal.StackedBar)
+	plot(connections, "Connections", pygal.Bar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	plot(complaints, "Events", pygal.StackedBar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 
 	return 0
 
 if "__main__" == __name__:
-	sys.exit(main())
+	r = main()
 	print("END OF LINE.")
+	sys.exit(r)
