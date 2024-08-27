@@ -68,7 +68,7 @@ def plot(data:dict, name:str, kind, labels_filter:callable):
 	timestamp = "{:04d}{:02d}{:02d}".format(now.year, now.month, now.day)
 	fn = "report_chart." + timestamp + "." + name.replace(' ', '-') + ".png"
 
-	chart = kind(width=2400, legend_at_bottom=True, x_label_rotation=45, truncate_label=30)
+	chart = kind(width=2400, legend_at_bottom=True, x_label_rotation=45, truncate_label=30, fill=True)
 	chart.title = name
 
 	sd = set()
@@ -100,7 +100,7 @@ def main():
 	normalize_dataset_minutely(connections, (target_min, target_max))
 	normalize_dataset_hourly(complaints, (target_min, target_max))
 
-	plot(connections, "Connections", pygal.Bar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	plot(connections, "Connections", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 	plot(complaints, "Events", pygal.StackedBar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 
 	return 0
