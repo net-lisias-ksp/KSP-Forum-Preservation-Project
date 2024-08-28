@@ -66,7 +66,7 @@ def normalize_dataset_minutely(dataset:dict, target:datetime.datetime) -> dict:
 def plot(data:dict, name:str, kind, labels_filter:callable):
 	now = datetime.datetime.now()
 	timestamp = "{:04d}{:02d}{:02d}".format(now.year, now.month, now.day)
-	fn = "report_chart." + timestamp + "." + name.replace(' ', '-') + ".png"
+	fn = "report_chart/" + timestamp + "." + name.replace(' ', '-') + ".png"
 
 	chart = kind(width=2400, legend_at_bottom=True, x_label_rotation=45, truncate_label=30, fill=True)
 	chart.title = name
