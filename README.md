@@ -34,13 +34,13 @@ Plain mirroring the site is a bad idea. In order to have a chance to survive, th
 However, we need to help them to help us (willingly or not). So we need to address some elephants in the room:
 
 * Impersonation
-	+ Dude, this is absolutely a no-go. Under no circumstances one can republish Forum's data in a way that may lead people to believe that you are them. So you just can't publish a mirror of the thing ipisi literis using a different URL.
+	+ Dude, this is absolutely a no-go. Under no circumstances one can republish Forum's data in a way that may lead people to believe that you are them. So you just can't publish a mirror of the thing *ipsi litteris* using a different URL.
 * Plagiarism
 	+ *Ditto*! If you change the content in an attempt to prevent the Impersonation, you are... well... changing the IP and publishing a derivative!!! This is piracy, simple like that.
 * Copyright
 	+ Our best hope of success is to rely on the Copyright loopholes that **may** allow us to legally do this stunt.
 
-Given the above considerations, I concluded that going Internet Archive is the most viable solution. The Look and Feel makes absolutely sure you are not impersonating Forum or TTI, the content is preserved preventing plagiarism and since the Internet Archive managed to legally publish their archives, this is a precedent that we may use to do the same.
+Given the above considerations, I concluded that going Internet Archive is the most viable solution. The Look and Feel makes absolutely sure you are not impersonating Forum or TTI, the content is preserved (preventing plagiarism) and since the Internet Archive managed to legally publish their archives, this is a precedent that we may use to do the same.
 
 TTI (or whoever ends up buying the ~~lemon~~ IP) will always have the right to file a DMCA on anyone publishing such Archive, however. To tell you the true, they can do it even on our personal sites about the franchise (see [Nintendo](https://news.ycombinator.com/item?id=35597493). So let's discourse about what would prompt them to do that:
 
