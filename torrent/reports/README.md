@@ -5,9 +5,9 @@ Reports aiming to measure the impact of the scrapping on Forum's servers, in an 
 
 ## `report_http5`
 
-Between 2023-05-01T23:27:27 and xxxxx this project was naively (or stupidly) ignoring the `HTTP 429 Too Many Requests` responses from Forum, and so kept scrapping until the bitter when Forum gets screwed by overloading, event flagged by `HTTP 5xx` messages.
+Between 2023-05-01T23:27:27 and 2024-08-24T00:00:00 this project was naively (or stupidly) ignoring the `HTTP 429 Too Many Requests` responses from Forum, and so kept scrapping until the bitter when Forum gets screwed by overloading, event flagged by `HTTP 5xx` messages.
 
-As from xxxxx, the scrapping tool is now recognising and temporarily pausing operations when receiving a `HTTP 429` and, so, it's now rarely receiving any `HTTP 5XX` responses (be it because they ceased happening, be it because Forum is not being hit in order get such responses).
+As from 2024-08-24, the scrapping tool is now recognising and temporarily pausing operations when receiving a `HTTP 429` and, so, it's now rarely receiving any `HTTP 5XX` responses (be it because they ceased happening, be it because Forum is not being hit in order get such responses).
 
 So this report can't be used anymore as a Forum's health meter and it's now relevant only for historical reference.
 

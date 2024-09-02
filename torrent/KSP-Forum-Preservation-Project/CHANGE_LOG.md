@@ -1,5 +1,9 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-0902 : Scrappings for August 2024
+	+ Added scrapped content for August 2024
+	+ redis dump is back
+	+ Added a `ALL_URLS.csv` with all the URLs ever crawled, when and classification.
 * 2024-0820 : MOAR Cleaning up
 	+ Added `*-legal.warc` file with the Forum's and TTWO's legalese in a single packet
 		- These terms are not hosted on Forum, so I cooked a dedicated spider just for them.
