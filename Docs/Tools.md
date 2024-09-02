@@ -132,3 +132,11 @@ wip
 
 	for f in *.lrz; do ssh-keygen -Y verify -f ./allowed_signers -I net.lisias.ksp-Forum-Preservation-Project -n $f.sig -s $f.sig < $f ; done
 
+
+## redis
+
+### export
+
+	redis-export -u "redis://macmini62:6379/0/pywb:forum.kerbalspaceprogram.com:cdxj" "pywb:forum.kerbalspaceprogram.com" redis.dump.json
+	
+
