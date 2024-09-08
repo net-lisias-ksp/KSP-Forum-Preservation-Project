@@ -4,7 +4,7 @@
 
 find ../spider -name "*.log*" -exec cat {} \; |
 {
-	grep -a "Site complained" | sed -r 's/^(.+) (.+) \[forum.kerbalspaceprogram.com\] INFO: (.+)$/\1\t\2\t\3/g' | sort
+	grep -a "Site complained" | sed -r 's/^(.+) (.+) \[forum.kerbalspaceprogram.com\] INFO: (.+)$/\1\t\2\t\3/g' | sed 's/Zzzzzzzz 522024/2024/g' | sort
 } > site_complaints_log
 
 cat site_complaints_log |
