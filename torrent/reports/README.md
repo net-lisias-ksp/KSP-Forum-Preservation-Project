@@ -14,6 +14,13 @@ So this report can't be used anymore as a Forum's health meter and it's now rele
 This report consolidates the `WARC` file contents before being sanitised.
 
 
+## `report_http`
+
+Since 2021-09-05, the need to ise the `warc` files again as source of errors arose again, so the original `report_http5` tool was refactored into the present one.
+
+This report consolidates the `WARC` file contents before being sanitised.
+
+
 ## `build_connect_log`
 
 This report aims to monitor the Forum's perceivable health by reporting on a timeline how many hits per minute we are being able to score, as well the response time.

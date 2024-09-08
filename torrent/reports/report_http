@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+SOURCE_BKP="../forum.kerbalspaceprogram.com-rec/collections/forum-kerbalspaceprogram-com-rec/archive.bkp" 
+SOURCE_DIR="../forum.kerbalspaceprogram.com-rec/collections/forum-kerbalspaceprogram-com-rec/archive"
+if [ ! -f ./report_http_bkp.csv ] ; then
+	python report_http.py $SOURCE_BKP | sort | uniq > ./report_http_bkp.csv
+fi
+python report_http.py $SOURCE_DIR | sort | uniq > ./report_http.csv
+cat ./report_http_bkp.csv ./report_http.csv | 
+{
+	#cut -d $'\t' -f1 | awk '{ print(substr($0, 0,13)); }' | uniq -c | awk '{ print($2"\t"$1); }' | sed 's/T/\t/g'
+	sed -r 's/^(.+)T([0-9]+):[0-9]+:.+\t([0-9]+).*/\1\t\2\t\3/g' | uniq -c | awk '{ print($2"\t"$3"\t"$4"\t"$1); }'
+} > ./report_http.hits-per-hour.csv

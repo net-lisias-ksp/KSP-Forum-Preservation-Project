@@ -37,6 +37,20 @@ def cvs_load_complaints(name:str) -> dict:
 			r[kind][timestamp] = count
 	return r
 
+def __merge_complaints(d1:dict, d2:dict) -> dict:
+	r = dict()
+	def merge(r:dict, d:dict):
+		for k,v in d.items():
+			if k not in r: r[k] = dict()
+			for kk,vv in v.items():
+				if kk in r[k]:
+					r[k][kk] += vv
+				else:
+					r[k][kk] = vv
+	merge(r,d1)
+	merge(r,d2)
+	return r
+
 def __normalize_dataset(dataset:dict, target:tuple, increment:callable) -> dict:
 	for d in dataset:
 		dataset[d] = { k:v for k, v in dataset[d].items() if k >= target[0] and k <= target[1] }
@@ -85,7 +99,9 @@ def plot(data:dict, name:str, kind, labels_filter:callable):
 
 def main():
 	connect = cvs_load_connect("connect_log.hits-per-minute")
-	complaints = cvs_load_complaints("site_complaints_log.hits-per-hour")
+	some_complaints = cvs_load_complaints("site_complaints_log.hits-per-hour")
+	more_complaints = cvs_load_complaints("report_http.hits-per-hour")
+	complaints = __merge_complaints(some_complaints, more_complaints)
 
 	all_complaints_keys = set()
 	for i in complaints:
