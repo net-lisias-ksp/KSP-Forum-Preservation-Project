@@ -2,12 +2,34 @@
 
 #2024-08-18 15:51:30 [forum.kerbalspaceprogram.com] INFO: Site complained about "502". Retrying <GET https://forum.kerbalspaceprogram.com/topic/160140-122-kolyphemus-system-the-kerbalized-polyhemus/?do=findComment&comment=3107347> in 900 seconds.
 
-find ../spider -name "*.log*" -exec cat {} \; |
-{
-	grep -a "Site complained" | sed -r 's/^(.+) (.+) \[forum.kerbalspaceprogram.com\] INFO: (.+)$/\1\t\2\t\3/g' | sed 's/Zzzzzzzz 522024/2024/g' | sort
-} > site_complaints_log
+FN="./site_complaints_log.csv"
+FN_BKP=${FN/.csv/_bkp.csv}
 
-cat site_complaints_log |
+
+do_log() {
+	local mask=$1
+	local fn=$2
+	find ../spider -name "$mask" -exec cat {} \; |
+	{
+		grep -a "Site complained" | sed -r 's/^(.+) (.+) \[forum.kerbalspaceprogram.com\] INFO: (.+)$/\1\t\2\t\3/g' | sed 's/Zzzzzzzz 522024/2024/g' | sort
+	} > $fn
+}
+
+if [ -f $FN_BKP ] ; then
+	for f in `find ../spider -name "*.log.*"` ; do
+		if [ "$f" -nt $FN_BKP ]; then
+			rm $FN_BKP
+			break
+		fi
+	done
+fi
+
+if [ ! -f $FN_BKP ] ; then
+	do_log "*.log.*" $FN_BKP
+fi
+do_log "*.log" $FN
+
+cat $FN_BKP $FN |
 {
 	sed -r 's/(.+)\t(.+)\t.+\"([0-9]+)\"\. Retrying .+ in ([0-9]+) seconds\./\1\t\2\t\3\t\4/g'
 } > site_complaints_log.waits-per-event.csv

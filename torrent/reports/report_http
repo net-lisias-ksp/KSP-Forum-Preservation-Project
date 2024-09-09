@@ -2,6 +2,18 @@
 
 SOURCE_BKP="../forum.kerbalspaceprogram.com-rec/collections/forum-kerbalspaceprogram-com-rec/archive.bkp" 
 SOURCE_DIR="../forum.kerbalspaceprogram.com-rec/collections/forum-kerbalspaceprogram-com-rec/archive"
+
+FN="./report_http.csv"
+FN_BKP=${FN/.csv/_bkp.csv}
+
+if [ -f $FN_BKP ] ; then
+	for f in ls -1 $SOURCE_BKP/warc ; do
+		if [ "$f" -nt ./report_http_bkp.csv ]; then
+			rm $FN_BKP
+			break
+		fi
+	done
+fi
 if [ ! -f ./report_http_bkp.csv ] ; then
 	python report_http.py $SOURCE_BKP | sort | uniq > ./report_http_bkp.csv
 fi
