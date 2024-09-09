@@ -1,5 +1,9 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-0908 : Partial Scrappings for the September, 1st week
+	+ Don't get attached to these files, they will be reworked next month
+		+ They are here to prevent losing data if something happens on my end of the cable modem
+	+ I didn't bore to update anything else here, neither signed these files.
 * 2024-0902 : Scrappings for August 2024
 	+ Added scrapped content for August 2024
 	+ redis dump is back
