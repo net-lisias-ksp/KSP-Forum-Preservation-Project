@@ -8,17 +8,17 @@ FN_BKP=${FN/.csv/_bkp.csv}
 
 if [ -f $FN_BKP ] ; then
 	for f in ls -1 $SOURCE_BKP/warc ; do
-		if [ "$f" -nt ./report_http_bkp.csv ]; then
+		if [ "$f" -nt $FN_BKP ]; then
 			rm $FN_BKP
 			break
 		fi
 	done
 fi
-if [ ! -f ./report_http_bkp.csv ] ; then
-	python report_http.py $SOURCE_BKP | sort | uniq > ./report_http_bkp.csv
+if [ ! -f $FN_BKP ] ; then
+	python report_http.py $SOURCE_BKP | sort | uniq > $FN_BKP
 fi
-python report_http.py $SOURCE_DIR | sort | uniq > ./report_http.csv
-cat ./report_http_bkp.csv ./report_http.csv | 
+python report_http.py $SOURCE_DIR | sort | uniq > $FN
+cat $FN_BKP $FN |
 {
 	#cut -d $'\t' -f1 | awk '{ print(substr($0, 0,13)); }' | uniq -c | awk '{ print($2"\t"$1); }' | sed 's/T/\t/g'
 	sed -r 's/^(.+)T([0-9]+):[0-9]+:.+\t([0-9]+).*/\1\t\2\t\3/g' | uniq -c | awk '{ print($2"\t"$3"\t"$4"\t"$1); }'

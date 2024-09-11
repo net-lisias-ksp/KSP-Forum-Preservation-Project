@@ -37,6 +37,30 @@ def cvs_load_complaints(name:str) -> dict:
 			r[kind][timestamp] = count
 	return r
 
+def __cvs_load_connect_with_bkp(name:str) -> dict:
+	r1 = cvs_load_connect(name)
+	r2 = cvs_load_connect(name+"_bkp")
+	return __merge_connect(r1, r2)
+
+def __cvs_load_complaints_with_bkp(name:str) -> dict:
+	r1 = cvs_load_complaints(name)
+	r2 = cvs_load_complaints(name+"_bkp")
+	return __merge_complaints(r1, r2)
+
+def __merge_connect(d1:dict, d2:dict) -> dict:
+	r = dict()
+	def merge(r:dict, d:dict):
+		for k,v in d.items():
+			if k not in r: r[k] = dict()
+			for kk,vv in v.items():
+				if kk in r[k]:
+					r[k][kk] += vv
+				else:
+					r[k][kk] = vv
+	merge(r,d1)
+	merge(r,d2)
+	return r
+
 def __merge_complaints(d1:dict, d2:dict) -> dict:
 	r = dict()
 	def merge(r:dict, d:dict):
@@ -72,11 +96,11 @@ def __normalize_dataset(dataset:dict, target:tuple, increment:callable) -> dict:
 	return dataset
     
 def normalize_dataset_hourly(dataset:dict, target:tuple) -> dict:
-        return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(hours=1) )
-				
+	return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(hours=1) )
+
 def normalize_dataset_minutely(dataset:dict, target:datetime.datetime) -> dict:
-        return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(minutes=1) )
-    
+	return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(minutes=1) )
+
 def plot(data:dict, name:str, kind, labels_filter:callable):
 	now = datetime.datetime.now()
 	timestamp = "{:04d}{:02d}{:02d}".format(now.year, now.month, now.day)
