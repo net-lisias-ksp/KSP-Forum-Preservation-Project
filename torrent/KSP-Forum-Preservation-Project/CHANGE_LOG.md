@@ -1,5 +1,22 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-1002 : Scrappings for September 2024
+	+ All partial `warc` files were replaced by the proper ones.
+		`ALL_URLS.csv` was updated accordinly.
+	+ Forum is "more or less" feature complete.
+		- All known topics up to October 1st were scrapped at least once.
+		- From now on, the efforts will focus on:
+			- Scrapping missing profiles;
+			- Scrapping new topics;
+			- update previously scrapped topics when needed (low priority).
+	+ New `warc` "kind" `revisits`, preseving the recorded... well... revisits. :)
+		- `revisits` are not needed for playback, but will play a role now that topics and profiles should be updated regularly.
+	+ `revisits` and `redirects` from 202407 and 202408 were reworked (and replaced).
+		- Better sanitizing processes were applied on them.
+* 2024-0924 : Partial Scrappings for the September, 3rd week
+	+ *Ditto*
+	+ Added `warc` file for `revisits`.
+		- Not useful for replaying, but will help on crawling by remembering the last time a page was revisited, even if not changes deteced.
 * 2024-0914 : Partial Scrappings for the September, 2nd week
 	+ *Ditto*
 * 2024-0908 : Partial Scrappings for the September, 1st week
