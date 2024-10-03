@@ -125,7 +125,8 @@ hint: mutable torrents (BEP46)
 wip
 
 	f=[file_to_sign]
-	ssh-keygen -Y sign -f [keypath] -n $f.sig $f
+	keypath=[path to private key]
+	ssh-keygen -Y sign -f $keypath -n $f.sig $f
 
 
 ### Verifying file signatures

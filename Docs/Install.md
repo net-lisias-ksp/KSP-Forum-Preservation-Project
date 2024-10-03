@@ -38,3 +38,12 @@ wip
 ## Firing up the whole thing
 
 wip
+
+### Using the Steam Deck
+
+```
+sudo systemctl start sshd
+systemd-run --scope --user tmux
+```
+
+Não esquecer o SWAP!!!
