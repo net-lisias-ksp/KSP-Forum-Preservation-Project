@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 while true; do
+	echo "Started ad `date`"
 	./connect
 	./site_complaints
 	./report_http
 	python ./report_chart.py
-	echo `datetime`
+	echo "Finished at `date`"
 	sleep $((3600 - $(date +%s) % 3600))
 done
