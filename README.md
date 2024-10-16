@@ -7,7 +7,9 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## In a Hurry
 
-* [Download](https://archive.org/details/KSP-Forum-Preservation-Project)
+* ~~[Download](https://archive.org/details/KSP-Forum-Preservation-Project)~~
+	+ Internet Archive is currently mostly down, so the download page is temporarly unavailable.
+	+ I'm reticent to upload the current archived material on a fishy torrent site, but things are what things are. I'm looking for an alternative way to host the almost 20GB of data I had archived at this moment.
 * [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
 	+ [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
 * Documentation	
