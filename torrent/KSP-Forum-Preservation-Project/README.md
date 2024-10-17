@@ -28,7 +28,12 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 This torrent contains:
 
-* `WARC` files, to be used to a tool like `pywb` or anything else that knows what a `.warc` file is.
+* `WARC` files, to be used with a tool like `pywb` or anything else that knows what a `.warc` file is.
+	+ unpack the `.lrz` files using [lrzip](https://github.com/ckolivas/lrzip)
+		- Package list for Linux: https://pkgs.org/download/lrzip
+		- On MacOS: https://ports.macports.org/port/lrzip/
+		- On Windows: https://www.youtube.com/watch?v=z47kprta8Ig
+			- Good luck!
 * `.sig` files, with the digital signature on each artefact so you can sure whatever you have is the data I had published without tampering.
 	+ a `verify.sh` `bash` script, that will verify integrity of the signed files.
 + `allowed_signers` contains the public key used to sign the files. It **must** be identical to the one published on the project's repo ([here](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/tree/master/torrent/KSP-Forum-Preservation-Project)).
