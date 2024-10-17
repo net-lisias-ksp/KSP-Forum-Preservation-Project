@@ -19,7 +19,7 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 	+ Others?
 		- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
 * Documentation
-	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/mestre/README.md)
+	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/master/README.md)
 	+ [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
 		- [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
 
