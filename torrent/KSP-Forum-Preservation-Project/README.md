@@ -9,7 +9,15 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## In a Hurry
 
-* [Download](https://archive.org/details/KSP-Forum-Preservation-Project)
+* Downloads:
+	+  ~~[Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)~~
+		- Internet Archive is currently mostly down, so the download page is temporarily unavailable.
+	+ [buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA)
+		- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.
+		- Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.
+		- And remember, all the files on the dataset are **signed**. Check that signatures!
+	+ Others?
+		- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
 * Documentation
 	+ [Project's README](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/blob/mestre/README.md)
 	+ [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
