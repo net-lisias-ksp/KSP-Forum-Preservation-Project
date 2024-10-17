@@ -23,7 +23,7 @@ It was decided to implement the solution in a somewhat convoluted way, recording
 
 `pywb` allows us to dynamically merge the collections and serve them on a single front-end, as they were just one. Pretty convenient, and it was what allowed me to try this stunt at first place.
 
-The rationale for this decision is simple besides not exactly straightforward: images almost never changes, as well styles. Scrapping them separately will save a bit of Forum's resources and scrapping time while updating the collections, as the media will rarely (if ever) change. Same for styles.
+The rationale for this decision is simple besides not exactly straightforward: images almost never changes, as well styles. Scraping them separately will save a bit of Forum's resources and scraping time while updating the collections, as the media will rarely (if ever) change. Same for styles.
 
 So one can just ignore them while refreshing the archive contents, focusing on what matters most. 
 

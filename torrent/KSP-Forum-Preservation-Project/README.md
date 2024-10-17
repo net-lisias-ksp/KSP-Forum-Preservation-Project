@@ -2,7 +2,7 @@
 
 Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for the posteriority if the worst happens.
 
-This is the Internet Archive's torrent entry with the scrapped files. See the project's README (link below) for the gory details.
+This is the Internet Archive's torrent entry with the scraped files. See the project's README (link below) for the gory details.
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
