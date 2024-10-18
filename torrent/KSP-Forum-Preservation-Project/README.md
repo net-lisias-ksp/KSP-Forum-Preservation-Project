@@ -36,7 +36,7 @@ This torrent contains:
 			- Good luck!
 * `.sig` files, with the digital signature on each artefact so you can sure whatever you have is the data I had published without tampering.
 	+ a `verify.sh` `bash` script, that will verify integrity of the signed files.
-+ `allowed_signers` contains the public key used to sign the files. It **must** be identical to the one published on the project's repo ([here](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/tree/master/torrent/KSP-Forum-Preservation-Project)).
++ `allowed_signers` contains the public key to be used to verify the files' signatures. It **must** be identical to the one published on the project's repo ([here](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/tree/master/torrent/KSP-Forum-Preservation-Project)).
 + a bunch of `.md` files with minimal documentation (like this text). Refer to the project's repository (see "Source" above) for complete ones.
 
 
