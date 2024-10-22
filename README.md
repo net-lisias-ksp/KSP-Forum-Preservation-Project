@@ -4,7 +4,7 @@ Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for 
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
-## ~~Breaking~~ Broking News
+## ~~Breaking~~ Brokening News
 
 Forun's is down since 2024-1016. :(
 

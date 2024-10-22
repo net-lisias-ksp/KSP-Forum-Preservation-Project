@@ -7,7 +7,7 @@ This is the Internet Archive's torrent entry with the scraped files. See the pro
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
 
-## ~~Breaking~~ Broking News
+## ~~Breaking~~ Brokening News
 
 Forun's down since 2024-1016. :(
 
