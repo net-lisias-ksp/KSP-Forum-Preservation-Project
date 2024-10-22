@@ -17,8 +17,10 @@ Check the `News` section bellow.
 
 * [News](./Docs/News)
 * Downloads:
-	+  ~~[Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)~~
-		- Internet Archive is currently mostly down, so the download page is temporarily unavailable.
+	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
+		- Internet Archive's Collections is back as from 2024-1022, besides read/only.
+		- Now you can download via torrent up to the September 2024, and then only the few novelties from the alternate download sites.
+		- As soon as I am able to login and update the thing, I will do it.
 	+ [buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA)
 		- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.
 		- Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.
