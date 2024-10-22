@@ -4,9 +4,18 @@ Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for 
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
+## ~~Breaking~~ Broking News
+
+Forun's is down since 2024-1016. :(
+
+And as on 2024-1021, it's still down. :'(
+
+Check the `News` section bellow.
+
 
 ## In a Hurry
 
+* [News](./Docs/News)
 * Downloads:
 	+  ~~[Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)~~
 		- Internet Archive is currently mostly down, so the download page is temporarily unavailable.
