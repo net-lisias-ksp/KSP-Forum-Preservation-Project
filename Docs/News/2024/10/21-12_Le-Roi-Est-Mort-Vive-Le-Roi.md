@@ -24,4 +24,4 @@ What would be another problem - usually, whoever foots the bill call the shots a
 ## References
 
 * [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g8lipp/are_the_ksp_forum_mods_gone_forever/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit comment]()
+* [Reddit comment](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g8lipp/comment/lszt90s/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
