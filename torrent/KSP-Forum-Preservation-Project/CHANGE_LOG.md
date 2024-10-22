@@ -1,5 +1,14 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-1021 : Scrapings for October 2024
+	+ Sadly (I'm heart broken), Forum is down since last 16th.
+		- I'm keeping an up to date News section about [here](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/).
+	+ So, I only managed to scrap from 8th to 16th and, since until this moment nothing appears to improve on Forum, I decided to call it a Month and updated the Torrent.
+		- I reserved the 1st week of October for a mini Sabbatical, as I had 4 times the workload on September. **DAMN**, I lost a whole week. :/
+	+ In a way or another, I updated what I had. Let's hope for the best.
+	+ See [README](./README.md) for the up to date download links
+		- Because, yeah... [Web Archive is half down too](https://www.theverge.com/2024/10/14/24269741/internet-archive-online-read-only-data-breach-outage). :/
+			- ***KRAP!!!***
 * 2024-1002 : Scrapings for September 2024
 	+ All partial `warc` files were replaced by the proper ones.
 		`ALL_URLS.csv` was updated accordinly.
