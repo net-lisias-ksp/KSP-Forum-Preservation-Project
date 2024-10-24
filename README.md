@@ -17,10 +17,9 @@ Check the `News` section bellow.
 
 * [News](./Docs/News)
 * Downloads:
-	+  ~~[Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)~~
-		- ~~Internet Archive's Collections [is back as from 2024-1022](https://blog.archive.org/2024/10/21/internet-archive-services-update-2024-10-21/), besides read/only.~~
-			- And now, [it's gone again](https://www.reddit.com/r/DataHoarder/comments/1g9wg5z/i_didnt_realize_how_much_i_used_it_until_this/#lightbox).
-		- ~~Now you can download via torrent up to the September 2024, and then only the few novelties from the alternate download sites.~~
+	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
+		- Internet Archive's Collections [is back (again) as from 2024-1024](https://www.reddit.com/r/DataHoarder/comments/1gaqg0r/were_so_back/), besides read/only.
+		- Now you can download via torrent up to the September 2024, and then only the few novelties from the alternate download sites.
 		- As soon as I am able to login and update the thing, I will do it.
 	+ [buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA?orderby=createdAt&orderdir=desc&page=1)
 		- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.
@@ -139,3 +138,8 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 	+ [iipc's Awesome Web Archiving document](https://github.com/iipc/awesome-web-archiving)
 	+ [Warchaelogy](https://nlnwa.github.io/warchaeology/) - in go
 		- [warcrefs](https://github.com/arcalex/warcrefs) for Java lovers
+* Outage
+	+ Internet Archive was down from 2024-10-11 to 22.
+		- Then gone down again at [2024-10-22](https://www.reddit.com/r/DataHoarder/comments/1g9wg5z/i_didnt_realize_how_much_i_used_it_until_this/#lightbox).
+		- Apparently is back as from [2024-10-23](https://www.reddit.com/r/DataHoarder/comments/1gaqg0r/were_so_back/)
+	+ Forum is down since [2024-10-16](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/tree/master/Docs/News).
