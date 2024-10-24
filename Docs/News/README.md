@@ -16,6 +16,7 @@ This document summarises the event chronologically:
 		- 12:18z : [Le Roi Est Mort, Vive Le Roi?](./2024/10/21-12_Le-Roi-Est-Mort-Vive-Le-Roi.md)
 		- 23:50z : [Malice?](./2024/10/21-23_Malice.md)
 	+ 22th : [Something Changed](./2024/10/22-18_Something-changed.md)
+	+ 23th : [Someone is finally doing something](./2024/10/23_Someone-if-finally-doing-something.md)
 
 
 ## References
