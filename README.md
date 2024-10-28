@@ -4,11 +4,9 @@ Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for 
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
-## ~~Breaking~~ Brokening News
+## News
 
-Forun's is down since 2024-1016. :(
-
-And as on 2024-1021, it's still down. :'(
+Forun's was down since 2024-1016, but **finally** came back to life at 2024-1028
 
 Check the `News` section bellow.
 

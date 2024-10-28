@@ -17,7 +17,7 @@ This document summarises the event chronologically:
 		- 23:50z : [Malice?](./2024/10/21-23_Malice.md)
 	+ 22th : [Something Changed](./2024/10/22-18_Something-changed.md)
 	+ 23th : [Someone is finally doing something](./2024/10/23_Someone-if-finally-doing-something.md)
-
+	+ 28th : [Forum is back](./2024/10/28_Forum-is-back.md)
 
 ## References
 
@@ -26,3 +26,4 @@ This document summarises the event chronologically:
 * [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g54ueo/forum_is_downhow_can_i_download_module_manager/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g70ajs/ksp_forumsand_the_lack_thereof/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g8lipp/are_the_ksp_forum_mods_gone_forever/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1gebvn8/the_forum_is_back_up_and_running/)
