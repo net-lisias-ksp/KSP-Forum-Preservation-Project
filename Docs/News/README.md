@@ -1,8 +1,6 @@
 # KSP's Forum Preservation Project :: News
 
-Yes, it happened. They gone South somewhere after 2024-10-16T01:03:29Z (the last successful "ping" I got from them) and still down at the moment of this writing, 2024-1022T0018z . I'm terribly sad.
-
-Vanamonde [reached us on Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g4j9rn/comment/ls8ex0o/), telling they are working on it.
+Yes, it happened. They gone South somewhere after 2024-10-16T01:03:29Z (the last successful "ping" I got from them) ~~and still down at the moment of this writing, 2024-1022T0018z . I'm terribly sad.~~ and came back (finally) on 2024-1028.
 
 This document summarises the event chronologically:
 
