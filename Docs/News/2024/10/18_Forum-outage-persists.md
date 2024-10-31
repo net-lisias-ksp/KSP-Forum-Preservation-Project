@@ -4,7 +4,7 @@
 
 Still down. *Krap*.
 
-Other than some rants about AI Scrappers, no further news.
+Other than some rants about AI Scrapers, no further news.
 
 
 ## References

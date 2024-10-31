@@ -4,7 +4,7 @@
 
 People on Reddit are now talking about intentional attacks on Forum. And I agree.
 
-Until recently, I was blaming AI Companies for scrapping the Web to their knees - and in fact, at least some of them were.
+Until recently, I was blaming AI Companies for scraping the Web to their knees - and in fact, at least some of them were.
 
 Then a bit later, people started to get worried and tried to scrap Forum themselves (like me). Some people believed that they were the ones screwing the Forum, but I can say that someone on PD or TTWO cranked up the CloudFlare protections to a pretty indecent level, to the point that if I restarted my browser the very few pages I had opened would make CloudFlare to strike me by "abuse". Not saying it's impossible, but pretty unlikely that personal or a small group of enthusiasts could overcome CloudFlare in order to keep causing damages.
 
