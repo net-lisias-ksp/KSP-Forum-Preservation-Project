@@ -16,12 +16,12 @@ Check the `News` section bellow.
 * [News](./Docs/News)
 * Downloads:
 	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
-		- Internet Archive's Collections [is back (again) as from 2024-1024](https://www.reddit.com/r/DataHoarder/comments/1gaqg0r/were_so_back/), besides read/only.
-		- Now you can download via torrent up to the September 2024, and then only the few novelties from the alternate download sites.
-		- As soon as I am able to login and update the thing, I will do it.
-	+ [buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA?orderby=createdAt&orderdir=desc&page=1)
-		- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.
-		- Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.
+		- Internet Archive's Collections as from 2024-1124], is fully operational.
+		- It's updated to the latest release.
+	+ ~~[buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA?orderby=createdAt&orderdir=desc&page=1)~~
+		- I just detected (2024-1124) that the buzzheavier downloads were removed. (sigh)
+		~~- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.~~
+		~~- Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.~~
 		- And remember, all the files on the dataset are **signed**. Check that signatures!
 	+ Others?
 		- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
