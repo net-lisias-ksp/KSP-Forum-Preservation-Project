@@ -9,7 +9,9 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## News
 
-Forun's was down since 2024-1016, but **finally** came back to life at 2024-1028
+Forun's was down since 2024-1016, but **finally** came back to life at 2024-1028.
+
+Internet Archive was attacked in October 2024, but it's fully operational again as November 2024.
 
 Check the `News` section bellow.
 
@@ -18,12 +20,8 @@ Check the `News` section bellow.
 
 * [News](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/)
 * Downloads:
-	+  ~~[Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)~~
-		- Internet Archive is currently mostly down, so the download page is temporarily unavailable.
-	+ [buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA)
-		- I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.
-		- Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.
-		- And remember, all the files on the dataset are **signed**. Check that signatures!
+	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
+		- [Internet Archive is fully operational](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/2024/11/24_Archive-is-back) for me at least since 2024-1124.
 	+ Others?
 		- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
 * Documentation

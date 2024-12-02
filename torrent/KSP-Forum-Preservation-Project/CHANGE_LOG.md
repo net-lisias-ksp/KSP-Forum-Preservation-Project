@@ -1,5 +1,14 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2024-1201 : Scrapings for November 2024
+	+ Contains scrapings from Oct 28th to Nov 30th.
+	+ Pretty intense month:
+		- Forum came back to life at Oct 28.
+		- [BuzzHeavier was raided](http://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/2024/11/24_Archive-is-back). I will not use it anymore...
+		- But [Internet Archive is fully operational](http://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/2024/11/24_Archive-is-back)!
+		- I grabbed a Raspberry PI 5 to do the archiving.
+			- Not as fast as the Steam Deck I was using, but way more versatile because now I have full control over the O.S.
+			- And I have my Steam Deck back! :) 
 * 2024-1021 : Scrapings for October 2024
 	+ Sadly (I'm heart broken), Forum is down since last 16th.
 		- I'm keeping an up to date News section about [here](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/).
