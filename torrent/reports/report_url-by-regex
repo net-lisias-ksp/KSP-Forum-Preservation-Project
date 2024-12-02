@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+REC_DIR="../forum.kerbalspaceprogram.com-rec/collections/forum-kerbalspaceprogram-com-rec/archive"
+PUB_DIR="../forum.kerbalspaceprogram.com/collections/forum-kerbalspaceprogram-com/archive"
+SUBSTRING="%7B___base_url___%7D"
+REGEX=".+href=\"(.*?${SUBSTRING}.*?)\""
+
+python report_url-by-regex.py $REC_DIR $SUBSTRING $REGEX
+python report_url-by-regex.py $PUB_DIR $SUBSTRING $REGEX
