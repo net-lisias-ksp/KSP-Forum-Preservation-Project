@@ -5,3 +5,4 @@ __pycache__
 torrent/**/*.lrz
 torrent/**/*.sig
 torrent/**/*.warc
+connect_log_bkp.csv.bkp
