@@ -5,9 +5,9 @@ Created on Apr 1, 2023
 '''
 
 import os, sys
-import pygal
 import datetime
 import csv
+import pygal
 
 def cvs_load_connect(name:str) -> dict:
 	r = dict()
@@ -35,6 +35,19 @@ def cvs_load_complaints(name:str) -> dict:
 			count = int(row[3])
 			if kind not in r: r[kind] = dict()
 			r[kind][timestamp] = count
+	return r
+
+def cvs_load_responsetime(name:str) -> dict:
+	r = dict()
+	path = os.path.join(".", name+".csv")
+	with open(path, 'r') as csvf:
+		reader = csv.reader(csvf, delimiter='\t', quotechar='"')
+		for row in reader:
+			date = [int(i) for i in row[0].split("-")]
+			time = [int(i) for i in row[1].split(":")]
+			timestamp = datetime.datetime(date[0], date[1], date[2], time[0], time[1], tzinfo=datetime.timezone.utc)
+			dt = float(row[2])
+			r[timestamp] = dt
 	return r
 
 def __cvs_load_connect_with_bkp(name:str) -> dict:
@@ -121,8 +134,21 @@ def plot(data:dict, name:str, kind, labels_filter:callable):
 	chart.render_to_png(fn, 120)
 
 
-def main():
+def do_connections_graph():
 	connect = cvs_load_connect("connect_log.hits-per-minute")
+	connections = dict()
+	connections['connections'] = connect
+
+	target_min = min(connect.keys())
+	target_max = max(connect.keys())
+	target_min = max(target_min, target_max - datetime.timedelta(days=8))
+
+	normalize_dataset_minutely(connections, (target_min, target_max))
+	plot(connections, "Connections", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	return target_min, target_max
+    
+
+def do_complaints_graph(target_min, target_max):
 	some_complaints = cvs_load_complaints("site_complaints_log.hits-per-hour")
 	more_complaints = cvs_load_complaints("report_http.hits-per-hour")
 	complaints = __merge_complaints(some_complaints, more_complaints)
@@ -130,19 +156,31 @@ def main():
 	all_complaints_keys = set()
 	for i in complaints:
 		all_complaints_keys.update(complaints[i].keys())
-	target_min = max(min(all_complaints_keys), min(connect.keys()))
-	target_max = min(max(all_complaints_keys), max(connect.keys()))
+	target_min = max(min(all_complaints_keys), target_min)
+	target_max = min(max(all_complaints_keys), target_max)
 	target_min = max(target_min, target_max - datetime.timedelta(days=8))
 
-	connections = dict()
-	connections['connections'] = connect
-
-	normalize_dataset_minutely(connections, (target_min, target_max))
 	normalize_dataset_hourly(complaints, (target_min, target_max))
-
-	plot(connections, "Connections", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 	plot(complaints, "Events", pygal.StackedBar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 
+
+def do_responsetime_graph(target_min, target_max):
+	connect = cvs_load_responsetime("connect_log.time-per-connect")
+	responsetime = dict()
+	responsetime['responsetime'] = connect
+
+	target_min = min(connect.keys())
+	target_max = max(connect.keys())
+	target_min = max(target_min, target_max - datetime.timedelta(days=8))
+
+	normalize_dataset_minutely(responsetime, (target_min, target_max))
+	plot(responsetime, "Worst Response Time", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+
+
+def main():
+	target_min, target_max = do_connections_graph()
+	do_complaints_graph(target_min, target_max)
+	do_responsetime_graph(target_min, target_max)
 	return 0
 
 if "__main__" == __name__:
