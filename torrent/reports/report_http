@@ -18,6 +18,7 @@ if [ ! -f $FN_BKP ] ; then
 	python report_http.py $SOURCE_BKP | sort | uniq > $FN_BKP
 fi
 python report_http.py $SOURCE_DIR | sort | uniq > $FN
+
 cat $FN_BKP $FN |
 {
 	#cut -d $'\t' -f1 | awk '{ print(substr($0, 0,13)); }' | uniq -c | awk '{ print($2"\t"$1); }' | sed 's/T/\t/g'
