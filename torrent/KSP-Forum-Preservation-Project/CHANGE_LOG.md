@@ -1,5 +1,9 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2025-0102 : Scrapings for December 2025
+	+ Contains scrapings from Dez 19th 2024 to Jan 1st 2025.
+	+ Pretty uneventful month.
+	+ Happy New Year!
 * 2024-1201 : Scrapings for November 2024
 	+ Contains scrapings from Oct 28th to Nov 30th.
 	+ Pretty intense month:
