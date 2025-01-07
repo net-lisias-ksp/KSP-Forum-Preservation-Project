@@ -96,9 +96,10 @@ def __normalize_dataset(dataset:dict, target:tuple, increment:callable) -> dict:
 	for i in dataset:
 		all_keys.update(dataset[i].keys())
 
-	d = min(all_keys)
-	end = max(all_keys)
-	while d < end:
+	target_min = increment(target[0])
+	target_max = increment(target[1])
+	d = target_min
+	while d <= target_max:
 		if d not in all_keys:
 			all_keys.add(d)
 		d = increment(d)
@@ -107,15 +108,14 @@ def __normalize_dataset(dataset:dict, target:tuple, increment:callable) -> dict:
 		for j in dataset:
 			if i not in dataset[j]: dataset[j][i]=0
 	return dataset
-    
+
 def normalize_dataset_hourly(dataset:dict, target:tuple) -> dict:
 	return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(hours=1) )
 
 def normalize_dataset_minutely(dataset:dict, target:datetime.datetime) -> dict:
 	return __normalize_dataset(dataset, target, lambda d: d + datetime.timedelta(minutes=1) )
 
-def plot(data:dict, name:str, kind, labels_filter:callable):
-	now = datetime.datetime.now()
+def plot(now:datetime.datetime, data:dict, name:str, kind, labels_filter:callable):
 	timestamp = "{:04d}{:02d}{:02d}".format(now.year, now.month, now.day)
 	fn = "report_chart/" + timestamp + "." + name.replace(' ', '-') + ".png"
 
@@ -128,27 +128,27 @@ def plot(data:dict, name:str, kind, labels_filter:callable):
 	sd = sorted(labels_filter(sd))
 	chart.x_labels = [(str(d.date()) if 0 == d.hour and 0 == d.minute and 0 == d.second else "{:s}T{:s}".format("\u00A0"*20, str(d.time()))) for d in sd]
 	chart.x_labels[0] = str(sd[0])
-        
+
 	for k in sorted(data.keys()):
 		chart.add(k, [data[k][d] for d in sd if d in data[k]])
 	chart.render_to_png(fn, 120)
 
 
-def do_connections_graph():
+def do_connections_graph(now:datetime.datetime):
 	connect = cvs_load_connect("connect_log.hits-per-minute")
 	connections = dict()
 	connections['connections'] = connect
 
 	target_min = min(connect.keys())
-	target_max = max(connect.keys())
+	target_max = min(now, max(connect.keys()))
 	target_min = max(target_min, target_max - datetime.timedelta(days=8))
 
 	normalize_dataset_minutely(connections, (target_min, target_max))
-	plot(connections, "Connections", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
-	return target_min, target_max
-    
+	plot(now, connections, "Connections", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	return now, target_min, target_max
 
-def do_complaints_graph(target_min, target_max):
+
+def do_complaints_graph(now, target_min, target_max):
 	some_complaints = cvs_load_complaints("site_complaints_log.hits-per-hour")
 	more_complaints = cvs_load_complaints("report_http.hits-per-hour")
 	complaints = __merge_complaints(some_complaints, more_complaints)
@@ -158,32 +158,40 @@ def do_complaints_graph(target_min, target_max):
 		all_complaints_keys.update(complaints[i].keys())
 	target_min = max(min(all_complaints_keys), target_min)
 	target_max = min(max(all_complaints_keys), target_max)
-	target_min = max(target_min, target_max - datetime.timedelta(days=8))
 
 	normalize_dataset_hourly(complaints, (target_min, target_max))
-	plot(complaints, "Events", pygal.StackedBar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	plot(now, complaints, "Events", pygal.StackedBar, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 
 
-def do_responsetime_graph(target_min, target_max):
+def do_responsetime_graph(now, target_min, target_max):
 	connect = cvs_load_responsetime("connect_log.time-per-connect")
 	responsetime = dict()
 	responsetime['responsetime'] = connect
 
-	target_min = min(connect.keys())
-	target_max = max(connect.keys())
-	target_min = max(target_min, target_max - datetime.timedelta(days=8))
+	target_min = max(min(connect.keys()), target_min)
+	target_max = min(max(connect.keys()), target_max)
 
 	normalize_dataset_minutely(responsetime, (target_min, target_max))
-	plot(responsetime, "Worst Response Time", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
+	plot(now, responsetime, "Worst Response Time", pygal.StackedLine, lambda sd: [d for d in sd if 0 == d.minute and 0 == d.second])
 
 
-def main():
-	target_min, target_max = do_connections_graph()
-	do_complaints_graph(target_min, target_max)
-	do_responsetime_graph(target_min, target_max)
+def main(args:list):
+	now = datetime.datetime.now(tz=datetime.timezone.utc)
+	if len(args) > 1:
+		raise ValueError("Invalid command line")
+	elif len(args) == 1:
+		try:
+			now = datetime.datetime.strptime(args[0].lower().replace("z", "+0000"), "%Y-%m-%d %H:%M:%S%z")
+		except:
+			now = datetime.datetime.strptime(args[0].lower(), "%Y-%m-%d")
+			now = datetime.datetime(now.year, now.month, now.day, 23, 59, 59, tzinfo=datetime.timezone.utc)
+	print("Using now = {0}".format(str(now)))
+	now, target_min, target_max = do_connections_graph(now)
+	do_complaints_graph(now, target_min, target_max)
+	do_responsetime_graph(now, target_min, target_max)
 	return 0
 
 if "__main__" == __name__:
-	r = main()
+	r = main(sys.argv[1:])
 	print("END OF LINE.")
 	sys.exit(r)
