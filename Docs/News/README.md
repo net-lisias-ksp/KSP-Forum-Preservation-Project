@@ -7,6 +7,7 @@ This document summarises the event chronologically:
 * January 2025:
 	+ 22th 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
 	+ 22th 0600z: [It's not Cloudflare](./2025/01/22_0600z_Cloudflare.md)
+	+ 22th 1800z: [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
 * November 2024:
 	+ 24th : [Internet Archive is back](./2024/11/24_Archive-is-back.md). But Buzzheavier was dawn, and on recovery became unsuit for this project.
 * October 2024:
@@ -24,9 +25,14 @@ This document summarises the event chronologically:
 
 ## References
 
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g4j9rn/anyone_else_having_problems_with_the_ksp_forum/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g51izh/meta_cannot_log_into_ksp_forums_sign_up_nor/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g54ueo/forum_is_downhow_can_i_download_module_manager/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g70ajs/ksp_forumsand_the_lack_thereof/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g8lipp/are_the_ksp_forum_mods_gone_forever/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-* [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1gebvn8/the_forum_is_back_up_and_running/)
+* First outage
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g4j9rn/anyone_else_having_problems_with_the_ksp_forum/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g51izh/meta_cannot_log_into_ksp_forums_sign_up_nor/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g54ueo/forum_is_downhow_can_i_download_module_manager/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g70ajs/ksp_forumsand_the_lack_thereof/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g8lipp/are_the_ksp_forum_mods_gone_forever/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1gebvn8/the_forum_is_back_up_and_running/)
+* Second one
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i72tlm/looks_like_it_really_happened/)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i70uih/private_division_website_and_with_it_the_ksp/)
+	+ [Steam](https://steamcommunity.com/app/220200/discussions/0/)
