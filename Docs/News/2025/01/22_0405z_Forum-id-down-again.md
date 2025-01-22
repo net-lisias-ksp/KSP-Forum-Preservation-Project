@@ -25,3 +25,7 @@ Private division, however, is giving me a different error:
 [Some dude on Reddit commented](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i72tlm/comment/m8hh51z/) that other game's wiki under Cloudflare also borked yesterday, and I had problems with Steam and Bitbucket today.
 
 I think these events may be related.
+
+### Addendum
+
+Unsurprinsingly, [wiki](https://wiki.kerbalspaceprogram.com) is also down. Same behaviour as Forum.
