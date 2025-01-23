@@ -5,10 +5,13 @@ Yes, it happened. They gone South somewhere after 2024-10-16T01:03:29Z (the last
 This document summarises the event chronologically:
 
 * January 2025:
-	+ 22th 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
-	+ 22th 0600z: [It's not Cloudflare](./2025/01/22_0600z_Cloudflare.md)
-	+ 22th 1800z: [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
-	+ 23th 0030z: [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again.md)
+	+ 22th
+		- 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
+		- 0600z: [It's not Cloudflare](./2025/01/22_0600z_Cloudflare.md)
+		- 1800z: [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
+	+ 23th
+		- 0030z: [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again.md)
+		- 2200z: [DNS Changes, but Forum still down](./2025/01/23_2200z_Some-changes-but-still-down.md)
 * November 2024:
 	+ 24th : [Internet Archive is back](./2024/11/24_Archive-is-back.md). But Buzzheavier was dawn, and on recovery became unsuit for this project.
 * October 2024:
