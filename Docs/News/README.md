@@ -8,6 +8,7 @@ This document summarises the event chronologically:
 	+ 22th 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
 	+ 22th 0600z: [It's not Cloudflare](./2025/01/22_0600z_Cloudflare.md)
 	+ 22th 1800z: [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
+	+ 23th 0030z: [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again.md)
 * November 2024:
 	+ 24th : [Internet Archive is back](./2024/11/24_Archive-is-back.md). But Buzzheavier was dawn, and on recovery became unsuit for this project.
 * October 2024:
@@ -36,3 +37,5 @@ This document summarises the event chronologically:
 	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i72tlm/looks_like_it_really_happened/)
 	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i70uih/private_division_website_and_with_it_the_ksp/)
 	+ [Steam](https://steamcommunity.com/app/220200/discussions/0/)
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438506)
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438588)
