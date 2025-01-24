@@ -11,7 +11,9 @@ This document summarises the event chronologically:
 		- 1800z: [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
 	+ 23th
 		- 0030z: [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again.md)
-		- 2200z: [DNS Changes, but Forum still down](./2025/01/23_2200z_Some-changes-but-still-down.md)
+		- 22:00z: [DNS Changes, but Forum still down](./2025/01/23_2200z_Some-changes-but-still-down.md)
+	+ 24th
+		- 16:00z: [Forum is back once again!](./2025/01/24_1600z_Forum-is-back-once-again.md)
 * November 2024:
 	+ 24th : [Internet Archive is back](./2024/11/24_Archive-is-back.md). But Buzzheavier was dawn, and on recovery became unsuit for this project.
 * October 2024:
@@ -42,3 +44,4 @@ This document summarises the event chronologically:
 	+ [Steam](https://steamcommunity.com/app/220200/discussions/0/)
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438506)
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438588)
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438619)
