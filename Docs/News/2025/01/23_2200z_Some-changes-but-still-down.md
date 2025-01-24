@@ -55,37 +55,8 @@ Furher `dig`ging `sp-forum-elb-2033387385.us-west-2.elb.amazonaws.com` I got:
 
 (there's no ANSWER SECTION)
 
-So apparently the new team is trying to move Forum into a Elastic Load Balance on AWS, but until this moment no DNS entry for it wasn't registered.
+So apparently the new team is trying to move Forum into an Elastic Load Balance on AWS, but until this moment no DNS entry for it was registered.
 
-Later, at 18:16z, I `dig`ged forum yet one more time:
-
-```
-> dig forum.kerbakspaceprogram.com
-
-; <<>> DiG 9.20.3 <<>> forum.kerbakspaceprogram.com
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 53811
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
-
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 512
-;; QUESTION SECTION:
-;forum.kerbakspaceprogram.com.	IN	A
-
-;; AUTHORITY SECTION:
-com.			900	IN	SOA	a.gtld-servers.net. nstld.verisign-grs.com. 1737663218 1800 900 604800 900
-
-;; Query time: 15 msec
-;; SERVER: 192.168.200.1#53(192.168.200.1) (UDP)
-;; WHEN: Thu Jan 23 17:14:06 -03 2025
-;; MSG SIZE  rcvd: 130
-```
-
-(no ANSWER SECTION)
-
-What means that they are working on the problem, not sitting on their hands.
-
-In time, [Wiki](https://wiki.kerbalspaceprogram.com/) is working all this time.
+In time, [Wiki](https://wiki.kerbalspaceprogram.com/) has being working all this time.
 
 Oh, well... Still waiting so.
