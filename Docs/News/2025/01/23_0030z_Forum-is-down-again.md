@@ -12,29 +12,51 @@ All of this strongly suggests it's again a DNS problem.
 So, let's dig:
 
 ```
-> dig kerbal.spaceprogram.com
+> dig forum.kerbalspaceprogram.com
 
-; <<>> DiG 9.20.3 <<>> kerbal.spaceprogram.com
+; <<>> DiG 9.20.3 <<>> forum.kerbalspaceprogram.com
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 27471
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 50028
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
 
 ;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-; COOKIE: 8380423e91abd6cf3f557df967918929ddbf0d90114d0bd1 (good)
+; EDNS: version: 0, flags:; udp: 512
 ;; QUESTION SECTION:
-;kerbal.spaceprogram.com.	IN	A
+;forum.kerbalspaceprogram.com.	IN	A
+
+;; ANSWER SECTION:
+forum.kerbalspaceprogram.com. 3600 IN	CNAME	sp-forum-elb-2033387385.us-west-2.elb.amazonaws.com.
 
 ;; AUTHORITY SECTION:
-spaceprogram.com.	1800	IN	SOA	dane.ns.cloudflare.com. dns.cloudflare.com. 2362775337 10000 2400 604800 1800
+us-west-2.elb.amazonaws.com. 60	IN	SOA	ns-332.awsdns-41.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 60
 
-;; Query time: 26 msec
+;; Query time: 118 msec
 ;; SERVER: 192.168.200.1#53(192.168.200.1) (UDP)
-;; WHEN: Wed Jan 22 21:11:21 -03 2025
-;; MSG SIZE  rcvd: 139
+;; WHEN: Thu Jan 23 11:39:33 -03 2025
+;; MSG SIZE  rcvd: 197
 ```
+and then
 
+```
+> dig sp-forum-elb-2033387385.us-west-2.elb.amazonaws.com
+
+; <<>> DiG 9.20.3 <<>> sp-forum-elb-2033387385.us-west-2.elb.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 27398
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;sp-forum-elb-2033387385.us-west-2.elb.amazonaws.com. IN	A
+
+;; Query time: 0 msec
+;; SERVER: 192.168.200.1#53(192.168.200.1) (UDP)
+;; WHEN: Thu Jan 23 11:40:11 -03 2025
+;; MSG SIZE  rcvd: 80
+```
 
 Oukey, no `ANSWER SECTION`. The entry was deleted. Since I had did a dig this afternoon and registered the data: 
 
@@ -111,6 +133,6 @@ us-west-2.elb.amazonaws.com. 8	IN	SOA	ns-332.awsdns-41.com. awsdns-hostmaster.am
 ```
 
 
-And voilà... The new owners are moving Forum to AWS.
+And voilà... The new owners are moving ~~Forum to AWS~~ ditching Cloudflare, and using AWS Elastic Load Balancer instead.
 
 In a few hours the new DNS entry will propagate and fix everything.
