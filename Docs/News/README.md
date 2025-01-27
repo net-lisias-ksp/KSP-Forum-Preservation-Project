@@ -1,6 +1,6 @@
 # KSP's Forum Preservation Project :: News
 
-Yes, it happened. They gone South somewhere after 2024-10-16T01:03:29Z (the last successful "ping" I got from them) ~~and still down at the moment of this writing, 2024-1022T0018z . I'm terribly sad.~~ and came back (finally) on 2024-1028.
+Forum is taking some heat in the last months, with eventual outages. This document summarizes the events.
 
 This document summarises the event chronologically:
 
