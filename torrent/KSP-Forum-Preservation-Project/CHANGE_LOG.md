@@ -1,5 +1,10 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2025-0202 : Scrapings for January 2025
+	+ Forum got down **again** from 22th to 24th, but it ended up being some infrastructure changes that took more time than expected.
+		- No harm done, other than some dirty pants.
+	+ I'm scraping Wiki too, but didn't managed to consolidate the data in time for this release.
+		- I expect to be able to update this torrent with the Wiki data still this month.
 * 2025-0102 : Scrapings for December 2025
 	+ Contains scrapings from Dez 19th 2024 to Jan 1st 2025.
 	+ Pretty uneventful month.
