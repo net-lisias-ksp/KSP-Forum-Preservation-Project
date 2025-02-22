@@ -1,9 +1,12 @@
 # KSP's Forum Preservation Project :: News
 
-Forum is taking some heat in the last months, with eventual outages. This document summarizes the events.
+Forum is taking some heat in the last months, with eventual outages. 
 
 This document summarises the event chronologically:
 
+* February 2025:
+	+ 22th
+		- 1330z: [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed.md).
 * January 2025:
 	+ 22th
 		- 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
@@ -45,3 +48,7 @@ This document summarises the event chronologically:
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438506)
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438588)
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226141-so-we-had-some-kind-of-technical-problem/?do=findComment&comment=4438619)
+* The CSS borkage
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226686-so-we-had-another-kind-of-technical-problem-whole-different-one-this-time-to-keep-things-exciting/page/4/#comment-4445032)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1ivgutw/does_anyone_know_why_my_ksp_forum_looks_so_strange/)
+* I also consolidated all Steam Discussion communications [here](https://steamcommunity.com/app/220200/discussions/0/595138831417615273/).

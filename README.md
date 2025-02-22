@@ -8,6 +8,8 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 Forun's was down since 2024-1016, but **finally** came back to life at 2024-1028 .
 
+In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. Switching to any other theme works around the issue.
+
 Check the `News` section bellow.
 
 
@@ -124,6 +126,7 @@ Yes, they royally screwed the pooch and there's a chance we would be helping to 
 	+ [`waybackpack`](https://github.com/jsvine/waybackpack) Download the entire Wayback Machine archive for a given URL. 
 	+ [`waybackpy`](https://github.com/akamhy/waybackpy) Wayback Machine API interface & a command-line tool
 	+ [`scrapy`](https://scrapy.org/) An open source and collaborative
+	+ [replayweb.page ](https://github.com/webrecorder/replayweb.page) A WARC player in your own browser, without relying on (yours or 3rd parties) servers.
 * Known publicly available efforts
 	+ [Internet Archive](https://web.archive.org/web/*/forum.kerbalspaceprogram.com)
 	+ [forum.kerbalspaceprogram.com_202305](https://archive.org/details/forum.kerbalspaceprogram.com_202305)
