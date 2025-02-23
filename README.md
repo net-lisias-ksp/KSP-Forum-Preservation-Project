@@ -8,7 +8,7 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 Forun's was down since 2024-1016, but **finally** came back to life at 2024-1028 .
 
-In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. Switching to any other theme works around the issue.
+In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. ~~Switching to any other theme works around the issue.~~ The issue is fixed since Feb 23th 8:00z.
 
 Check the `News` section bellow.
 

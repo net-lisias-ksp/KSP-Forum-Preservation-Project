@@ -7,6 +7,8 @@ This document summarises the event chronologically:
 * February 2025:
 	+ 22th
 		- 1330z: [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed.md).
+	+ 23th
+		- 0800z: [Forum's Theme is working again](./2025/02/23_Forum-Theme-Is-Fixed.md).
 * January 2025:
 	+ 22th
 		- 0405z: [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
@@ -51,4 +53,5 @@ This document summarises the event chronologically:
 * The CSS borkage
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226686-so-we-had-another-kind-of-technical-problem-whole-different-one-this-time-to-keep-things-exciting/page/4/#comment-4445032)
 	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1ivgutw/does_anyone_know_why_my_ksp_forum_looks_so_strange/)
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226686-so-we-had-another-kind-of-technical-problem-whole-different-one-this-time-to-keep-things-exciting/?do=findComment&comment=4445163) (back to normal)
 * I also consolidated all Steam Discussion communications [here](https://steamcommunity.com/app/220200/discussions/0/595138831417615273/).
