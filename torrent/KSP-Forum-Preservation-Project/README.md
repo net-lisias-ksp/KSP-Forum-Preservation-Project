@@ -23,6 +23,7 @@ Check the `News` section bellow.
 * News
 	+ [Forum was down... Again!](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/)
 	+ [Forum was down](https://ksp.lisias.net/blogs/news/2025-0122_Forum-is-down-AGAIN/)
+	+ [Forum got a CSS mishap](https://ksp.lisias.net/blogs/news/2025-0222_Forum-Default-Theme-Got-Screwed/)
 * Downloads:
 	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
 		- [Internet Archive is fully operational](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/2024/11/24_Archive-is-back) for me at least since 2024-1124.
