@@ -1,6 +1,6 @@
-# KSP's Forum Preservation Project
+# KSP's Forum/WIKI Preservation Project
 
-Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) for the posteriority if the worst happens.
+Efforts for preserving [KSP's Forum](https://forum.kerbalspaceprogram.com/) **and also** [KSP's WIKI](https://wiki.kerbalspaceprogram.com/) for the posteriority if the worst happens.
 
 We are hoping for the best, but expecting the worst. The hard part will be to expect the worst [without causing it](https://en.wikipedia.org/wiki/Self-fulfilling_prophecy)...
 
@@ -19,16 +19,20 @@ Check the `News` section bellow.
 
 * [News](./Docs/News)
 * Downloads:
-	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
-		- Internet Archive's Collections as from 2024-1124], is fully operational.
-		- It's updated to the latest release.
-	+ ~~[buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA?orderby=createdAt&orderdir=desc&page=1)~~
-		- I just detected (2024-1124) that the buzzheavier downloads were removed. (sigh)
-		- ~~I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.~~
-		- ~~Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.~~
-		- And remember, all the files on the dataset are **signed**. Check that signatures!
-	+ Others?
-		- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
+	+ Forum
+		- [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
+			- Internet Archive's Collections as from 2024-1124], is fully operational.
+			- It's updated to the latest release.
+		- ~~[buzzheavier.com](https://buzzheavier.com/fl/GaCLgPsR4AA?orderby=createdAt&orderdir=desc&page=1)~~
+			- I just detected (2024-1124) that the buzzheavier downloads were removed. (sigh)
+			- ~~I was reticent to upload the current archived material on some fishy fire sharing site, but things are what things are.~~
+			- ~~Monitor this site's reputation [here](https://www.urlvoid.com/scan/buzzheavier.com/). If anything fishy is reported, consider avoiding downloading from this one.~~
+			- And remember, all the files on the dataset are **signed**. Check that signatures!
+		- Others?
+			- As long doesn't costs me money neither remove the files if nobody downloads them for some time, what ruled out Google Drive, Dropbox and GoFile. 
+	+ WIKI
+		- [Internet Archive](https://archive.org/details/KSP-WIKI-Preservation-Project)
+		- Yeah! I finally gathered by... thingies... 🤪 together and published the WIKI material.
 * [Source](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
 	+ [Issue Tracker](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues)
 * Documentation	
@@ -95,6 +99,10 @@ But, by then, we risk being taken down on a DMCA, right? What are the possible o
 4. Forum dies, TTI issues take down on the Archives: Content is lost.
 
 Again, since our goal is the preservation of the Content, it's our best move to do the Archiving the same. What matters if TTI takes them down in the future, as long Forum is alive? And if Forum ever dies, it's still their best interest to preserve the content as any future reboot of the franchise would benefit from it. Heck, I would not be surprised if someone on TTI ends up making a copy of our Archives for them.
+
+### Notes about WIKI
+
+The WIKI is licensed under [CC-BY-SA 3.0](https://wiki.kerbalspaceprogram.com/wiki/Kerbal_Space_Program_Wiki:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License) and so no special care is needed - but keep in mind that KSP's trademarks [still apply](https://wiki.kerbalspaceprogram.com/wiki/Kerbal_Space_Program_Wiki:General_disclaimer)!
 
 
 ## DISCLAIMER
