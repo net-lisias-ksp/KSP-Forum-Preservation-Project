@@ -1,5 +1,7 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2025-0402 : Scrapings for March 2025
+	+ No news is good news!
 * 2025-0301 : Scrapings for February 2025
 	+ In 2025-0222, a mishap on handling the default theme's CSS rendered the site visually screwed.
 		- Changing the theme to anything else but Default was a viable workaound.
