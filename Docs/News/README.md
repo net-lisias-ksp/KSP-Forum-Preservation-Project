@@ -4,6 +4,9 @@ Forum is taking some heat in the last months, with eventual outages.
 
 This document summarises the event chronologically:
 
+* April 2025:
+	+ 14th:
+		- 00:00z [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance.md)
 * February 2025:
 	+ 22th
 		- 1330z: [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed.md).
@@ -54,4 +57,11 @@ This document summarises the event chronologically:
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226686-so-we-had-another-kind-of-technical-problem-whole-different-one-this-time-to-keep-things-exciting/page/4/#comment-4445032)
 	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1ivgutw/does_anyone_know_why_my_ksp_forum_looks_so_strange/)
 	+ [Forum](https://forum.kerbalspaceprogram.com/topic/226686-so-we-had-another-kind-of-technical-problem-whole-different-one-this-time-to-keep-things-exciting/?do=findComment&comment=4445163) (back to normal)
+* Scheduled downage for Maintenance and Migration
+	+ [Forum](https://forum.kerbalspaceprogram.com/topic/227645-forum-temporarily-offline-starting-april-14th-5pm-pst/)
+		- [On Archive](https://web.archive.org/web/20250412140215/https://forum.kerbalspaceprogram.com/topic/227645-forum-temporarily-offline-starting-april-14th-5pm-pst/)
+	+ [Reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1jyelne/forum_will_be_down_this_monday_april_14_for/)
+	+ Steam Discussions
+		- [KSP¹](https://steamcommunity.com/app/220200/discussions/0/530969911486361396/)
+		- [KSP2](https://steamcommunity.com/app/954850/discussions/0/830459290005319968/)
 * I also consolidated all Steam Discussion communications [here](https://steamcommunity.com/app/220200/discussions/0/595138831417615273/).

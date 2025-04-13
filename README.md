@@ -12,6 +12,8 @@ Forum was down again in January 22th and 23th 2025, coming back for good on 24th
 
 In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. ~~Switching to any other theme works around the issue.~~ The issue is fixed since Feb 23th 8:00z.
 
+Forum is schedule to go down for maintenance and migration on 2025-0414. It's expected to be back only on the next day.
+
 Check the `News` section bellow.
 
 
