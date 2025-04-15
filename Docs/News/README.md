@@ -5,8 +5,8 @@ Forum is taking some heat in the last months, with eventual outages.
 This document summarises the event chronologically:
 
 * April 2025:
-	+ 14th:
-		- 00:00z [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance.md)
+	+ 14th : [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance.md)
+	+ 15th : [Forum is back](./2025/04/15_Forum-is-back.md)
 * February 2025:
 	+ 22th
 		- 1330z: [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed.md).
