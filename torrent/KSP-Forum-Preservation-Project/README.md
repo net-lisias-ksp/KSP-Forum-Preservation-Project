@@ -9,11 +9,13 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## News
 
-Forums was down since 2024-1016, but **finally** came back to life at 2024-1028.
-
-Internet Archive was attacked in October 2024, but it's fully operational again as November 2024.
+Forum's was down since 2024-1016, but **finally** came back to life at 2024-1028.
 
 Forum was down again in January 22th and 23th 2025, coming back for good on 24th.
+
+In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. ~~Switching to any other theme works around the issue.~~ The issue is fixed since Feb 23th 8:00z.
+
+Forum was scheduled to go down for maintenance and migration on 2025-0414. It came back next day as intended.
 
 Check the `News` section bellow.
 
@@ -24,6 +26,7 @@ Check the `News` section bellow.
 	+ [Forum was down... Again!](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/)
 	+ [Forum was down](https://ksp.lisias.net/blogs/news/2025-0122_Forum-is-down-AGAIN/)
 	+ [Forum got a CSS mishap](https://ksp.lisias.net/blogs/news/2025-0222_Forum-Default-Theme-Got-Screwed/)
+	+ [Forum is down for maintenance and migration](https://ksp.lisias.net/blogs/news/2025-0414_Forum-scheduled-to-go-down-for-maintenance/)
 * Downloads:
 	+  [Internet Archive](https://archive.org/details/KSP-Forum-Preservation-Project)
 		- [Internet Archive is fully operational](https://ksp.lisias.net/blogs/news/2024-1015_Forum-is-down/2024/11/24_Archive-is-back) for me at least since 2024-1124.

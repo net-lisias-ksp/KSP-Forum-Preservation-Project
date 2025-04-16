@@ -1,5 +1,8 @@
 # KSP's Forum Preservation Project :: CHANGE LOG
 
+* 2025-0415 : Scrapings for the first 2 weeks of April 2025
+	+ April 14th Forum gone offline for updating and migration (they are being hosted by Invision now).
+		- Since I don't know yet what else had chanced besides the Theme (I like the classic Light Blue more... 😛), I concluded that it's better to finish a deliverable now with whatever I have now because the changes will probably trigger a re-scrap of the whole site, and I want to see if this is preventable somehow.
 * 2025-0402 : Scrapings for March 2025
 	+ No news is good news!
 * 2025-0301 : Scrapings for February 2025
