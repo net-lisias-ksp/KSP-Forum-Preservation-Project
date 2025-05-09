@@ -6,7 +6,9 @@ This document summarises the event chronologically:
 
 * 2025:
 	+ May:
-		- 9th : [Oh, boy... Here we go again...](./2025/05/09_1330z_Forum-is-down-again.md)
+		- 9th:
+			- 13:30z : [Oh, boy... Here we go again...](./2025/05/09_1330z_Forum-is-down-again.md)
+			- 14:30z : [And back we are](./2025/05/09_14_Forum-is-back-again.md)
 	+ April:
 		- 14th : [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance.md)
 		- 15th : [Forum is back](./2025/04/15_Forum-is-back.md)

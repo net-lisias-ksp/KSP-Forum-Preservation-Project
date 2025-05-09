@@ -1,6 +1,6 @@
 # Here we go again: Forum is down
 
-At May 9th, 2025 aproximately 13:30 Zulu Forum is down for me.
+At May 9th, 2025 aproximately 13:30 Zulu Forum is down for me. Can't say exactly when it happened, as I'm not scraping Forum again yet.
 
 ![Forum Is Down](./content/forum-is-down-again.png#FullWidth)
 
