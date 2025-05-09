@@ -6,6 +6,8 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## News
 
+As from 2025-0509:1330z, Forum is down again. 😬 It's all I can say for now, this month I'm not scraping Forum yet.
+
 Forum's was down since 2024-1016, but **finally** came back to life at 2024-1028.
 
 Forum was down again in January 22th and 23th 2025, coming back for good on 24th.
