@@ -12,9 +12,9 @@ It was speculated that at least one of these scrapers doesn't knows how to handl
 
 I managed to remember the following ones, however
 
-* https://www.reddit.com/r/technology/comments/1dlyh33/ai_companies_are_reportedly_still_scraping/
-* https://www.npr.org/2024/07/05/nx-s1-5026932/artificial-intelligence-web-crawlers-are-running-amok
-* https://news.ycombinator.com/item?id=35701565
+* [https://www.reddit.com/r/technology/comments/1dlyh33/ai_companies_are_reportedly_still_scraping/](https://www.reddit.com/r/technology/comments/1dlyh33/ai_companies_are_reportedly_still_scraping/)
+* [https://www.npr.org/2024/07/05/nx-s1-5026932/artificial-intelligence-web-crawlers-are-running-amok/](https://www.npr.org/2024/07/05/nx-s1-5026932/artificial-intelligence-web-crawlers-are-running-amok/)
+* [https://news.ycombinator.com/item?id=35701565](https://news.ycombinator.com/item?id=35701565)
 * I remember some other moderator (IIRC Gargamel, but don't trust this information without further evidence) complaining about - I wish I could remember when, as doing searches on Web Archive is virtually impossible.
 
 I found these on Google, between others, but these links where darkened meaning that I had visited them before.
@@ -35,13 +35,13 @@ Any of them imposing a tax **way** above what any individual or small group of e
 
 However, and this is a very serious possibility... The current outage is different, as one can see for this report:
 
-![20241016.Events.png](../../../../torrent/reports/report_chart/20241016.Events.png)
+![20241016.Events.png](../../../../torrent/reports/report_chart/20241016.Events.png#FullWidth)
 
 This suggests that somewhere about 2024-1015T12:00z at least (my last successful `HTTP 200 Ok` is from 2024-10-16T01:03:29z - perhaps due some caching?), something on the **database** itself got broke, because the Forum's Front Page was being loaded alright, only the link that would hit the MySQL server got the `500` salute.
 
 Forum outages were used to last a few hours, but this one is lasting **for days**. So, now, I have evidences that we are handling something different.
 
-I had talked about here: https://www.reddit.com/r/KerbalSpaceProgram/comments/1g70ajs/comment/lso0p36/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+I had talked about [on reddit](https://www.reddit.com/r/KerbalSpaceProgram/comments/1g70ajs/comment/lso0p36/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
 
 
 ## References

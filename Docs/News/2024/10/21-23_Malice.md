@@ -12,7 +12,7 @@ Interesting enough, Forum kept giving us the `http 5xx` salutes all the time, cl
 
 Check this report for the last week Forum was alive:
 
-![20241016.Events.png](https://raw.githubusercontent.com/net-lisias-ksp/KSP-Forum-Preservation-Project/refs/heads/master/torrent/reports/report_chart/20241016.Events.png)
+![20241016.Events.png](../../../../torrent/reports/report_chart/20241016.Events.png#FullWidth)
 
 The coloured bars are the "normal" `5xx` errors we are getting for months. That solid green bars are Forum going down. Something happened swift as a knife cutting a throat.
 

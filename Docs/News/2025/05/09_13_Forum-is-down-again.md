@@ -2,7 +2,7 @@
 
 At May 9th, 2025 aproximately 13:30 Zulu Forum is down for me.
 
-![Forum Is Down](./forum-is-down-again.png]
+![Forum Is Down](./content/forum-is-down-again.png#FullWidth)
 
 By some reason, CloudFlare is answering the request (again).
 
@@ -33,9 +33,3 @@ community.invisionsetup.com. 300 IN	A	172.66.1.101
 ```
 
 Don't have a clue about what could be happening at this moment.
-
-- - -
-
-* https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project
-	+ https://archive.org/details/KSP-Forum-Preservation-Project
-	+ https://archive.org/details/KSP-WIKI-Preservation-Project

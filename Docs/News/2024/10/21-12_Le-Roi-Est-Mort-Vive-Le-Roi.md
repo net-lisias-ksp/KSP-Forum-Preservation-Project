@@ -14,7 +14,7 @@ Trying to replace it will unavoidably split whatever is left from the Community 
 
 But life is what life is. If the worst really happens, we have secured more or less 98% of the Topics/Threads (besides I didn't managed to archive more than 40% of the profiles, damn) in a **public** available dataset here:
 
-https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project
+[https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project)
 
 That is only the raw data. We need somewhere to host a frontend, build a search engine to make the thing useful as a reference source and, of course, someone to foot the bill of keeping this thing online.
 

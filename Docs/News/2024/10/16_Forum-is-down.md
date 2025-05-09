@@ -4,7 +4,7 @@
 
 As we can see from the chart below, Forum gone titties up somewhere between 2024-1015T15:00z and 2024-1016T01:00z :
 
-![20241016.Events.png](../../../../torrent/reports/report_chart/20241016.Events.png)
+![20241016.Events.png](../../../../torrent/reports/report_chart/20241016.Events.png#FullWidth)
 
 Reason is unknown, but some educated guesses were made on Reddit. For two months already, it was detected that IA scrapers were hammering Forum mercilessly. I can't affirm that by myself, but this is the information that was given to us on Forum.
 

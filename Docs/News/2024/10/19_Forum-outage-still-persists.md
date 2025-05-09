@@ -6,7 +6,7 @@ I think we need some background.
 
 `1146` is a MySQL error code meaning "table or view not found" - but that, in reality, means that your user could not open the table or view by any reason - like the table getting corrupted or your user lacking permissions to access that table.
 
-https://10web.io/blog/mysql-error-1146/
+[https://10web.io/blog/mysql-error-1146/](https://10web.io/blog/mysql-error-1146/)
 
 The most common cause for Invision borking on a `EX1146` is the table `ibf_core_log` getting corrupted, not rarely by the disk where it is getting full.
 

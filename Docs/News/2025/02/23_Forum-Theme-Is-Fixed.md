@@ -4,4 +4,4 @@ Things are back to normal.
 
 You can switch back to the Default Theme if you want!
 
-![Changing theme back](./changing-theme-back.png##FullWidth)
+![Changing theme back](./content/changing-theme-back.png#FullWidth)

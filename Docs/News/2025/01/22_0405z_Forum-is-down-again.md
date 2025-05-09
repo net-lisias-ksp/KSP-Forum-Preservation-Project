@@ -8,11 +8,11 @@ None of them are back online at the moment of this writing.
 
 When trying to access `forum.kerbalspaceprogram.com.cdn.cloudflare.net` I get the exact the same error page when I try `forum.kerbalspaceprogram.com`:
 
-![error-msg.firefox.forum.png](./error-msg.firefox.forum.png)
+![error-msg.firefox.forum.png](./content/error-msg.firefox.forum.png#Center)
 
 Private division, however, is giving me a different error:
 
-![error-msg.firefox.pd.png](./error-msg.firefox.pd.png)
+![error-msg.firefox.pd.png](./content/error-msg.firefox.pd.png#Center)
 
 [Some dude on Reddit commented](https://www.reddit.com/r/KerbalSpaceProgram/comments/1i72tlm/comment/m8hh51z/) that other game's wiki under Cloudflare also borked yesterday, and I had problems with Steam and Bitbucket today.
 

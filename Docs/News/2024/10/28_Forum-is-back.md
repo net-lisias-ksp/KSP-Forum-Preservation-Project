@@ -2,6 +2,6 @@
 
 ## Forum is back
 
-![Forum is back](./28_Forum-is-back--image1.png)
+![Forum is back](./content/28_Forum-is-back--image1.png#FullWidth)
 
 It was about time... Almost two full weeks. :/

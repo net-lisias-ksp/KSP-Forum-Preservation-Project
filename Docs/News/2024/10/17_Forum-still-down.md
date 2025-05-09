@@ -4,7 +4,7 @@
 
 Forum still down. The Front Page appears to work fine, probably due caching, but if you click on any link to an internal page, you got the error page:
 
-![Forum's Error Message](./17_Forum-still-down--image1.png)
+![Forum's Error Message](./content/17_Forum-still-down--image1.png#FullWidth)
 
 Some few links (as `Guidelines`) works, probably due being a static page directly served by the HTTPD server.
 

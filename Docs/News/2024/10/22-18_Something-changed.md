@@ -4,7 +4,7 @@
 
 Forun's Front Page was shut down.
 
-![Forum Front Page](./22-18_Something-changed--image1.png)
+![Forum Front Page](./content/22-18_Something-changed--image1.png#FullWidth)
 
 Sniffing into the HTTP Response, I got:
 
