@@ -6,46 +6,46 @@ This document summarises the event chronologically:
 
 * 2026:
 	+ March
-		- 19th: [Temporally Unavailable](./2026/03/19_Forum-temporarily-unavailable.md)
+		- 19th: [Temporally Unavailable](./2026/03/19_Forum-temporarily-unavailable)
 * 2025:
 	+ May:
 		- 9th:
-			- 13:30z : [Oh, boy... Here we go again...](./2025/05/09_1330z_Forum-is-down-again.md)
-			- 14:30z : [And back we are](./2025/05/09_14_Forum-is-back-again.md)
+			- 13:30z : [Oh, boy... Here we go again...](./2025/05/09_1330z_Forum-is-down-again)
+			- 14:30z : [And back we are](./2025/05/09_14_Forum-is-back-again)
 	+ April:
-		- 14th : [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance.md)
-		- 15th : [Forum is back](./2025/04/15_Forum-is-back.md)
+		- 14th : [Forum is down for maintenance and migration](./2025/04/14_Forum-Down-For-Maintenance)
+		- 15th : [Forum is back](./2025/04/15_Forum-is-back)
 	+ February:
 		- 22th:
-			- 1330z : [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed.md).
+			- 1330z : [Forum's Default Theme Got Screwed](./2025/02/22_Forum-Default-Theme-Got-Screwed).
 		- 23th
-			- 0800z : [Forum's Theme is working again](./2025/02/23_Forum-Theme-Is-Fixed.md).
+			- 0800z : [Forum's Theme is working again](./2025/02/23_Forum-Theme-Is-Fixed).
 * 2025:
 	+ January:
 		- 22th:
-			- 0405z : [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again.md).
-			- 0600z : [It's not Cloudflare](./2025/01/22_0600z_Cloudflare.md)
-			- 1800z : [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again.md)
+			- 0405z : [Forum is down. AGAIN](./2025/01/22_0405z_Forum-is-down-again).
+			- 0600z : [It's not Cloudflare](./2025/01/22_0600z_Cloudflare)
+			- 1800z : [Forum is back. Again](./2025/01/22_1800z_Forum-is-back-again)
 		- 23th:
-			- 0030z : [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again.md)
-		- 22:00z : [DNS Changes, but Forum still down](./2025/01/23_2200z_Some-changes-but-still-down.md)
+			- 0030z : [Forum is down. **AGAIN**](./2025/01/23_0030z_Forum-is-down-again)
+		- 22:00z : [DNS Changes, but Forum still down](./2025/01/23_2200z_Some-changes-but-still-down)
 		- 24th:
-			- 16:00z : [Forum is back once again!](./2025/01/24_1600z_Forum-is-back-once-again.md)
+			- 16:00z : [Forum is back once again!](./2025/01/24_1600z_Forum-is-back-once-again)
 * 2024:
 	+ November:
-		- 24th : [Internet Archive is back](./2024/11/24_Archive-is-back.md). But Buzzheavier was dawn, and on recovery became unsuit for this project.
+		- 24th : [Internet Archive is back](./2024/11/24_Archive-is-back). But Buzzheavier was dawn, and on recovery became unsuit for this project.
 	* October:
-		- 16th : [Forum is down!!](./2024/10/16_Forum-is-down.md)
-		- 17th : [Forum still down!](./2024/10/17_Forum-still-down.md)
-		- 18th : [Forum outage persists!](./2024/10/18_Forum-outage-persists.md)
-		- 19th : [Forum outage still persists!](./2024/10/19_Forum-outage-still-persists.md)
-		- 20th : [Some people's kids...](./2024/10/20_Some-people-kids.md)
+		- 16th : [Forum is down!!](./2024/10/16_Forum-is-down)
+		- 17th : [Forum still down!](./2024/10/17_Forum-still-down)
+		- 18th : [Forum outage persists!](./2024/10/18_Forum-outage-persists)
+		- 19th : [Forum outage still persists!](./2024/10/19_Forum-outage-still-persists)
+		- 20th : [Some people's kids...](./2024/10/20_Some-people-kids)
 		- 21th :
-			- 12:18z : [Le Roi Est Mort, Vive Le Roi?](./2024/10/21-12_Le-Roi-Est-Mort-Vive-Le-Roi.md)
-			- 23:50z : [Malice?](./2024/10/21-23_Malice.md)
-		- 22th : [Something Changed](./2024/10/22-18_Something-changed.md)
-		- 23th : [Someone is finally doing something](./2024/10/23_Someone-if-finally-doing-something.md)
-		- 28th : [Forum is back](./2024/10/28_Forum-is-back.md)
+			- 12:18z : [Le Roi Est Mort, Vive Le Roi?](./2024/10/21-12_Le-Roi-Est-Mort-Vive-Le-Roi)
+			- 23:50z : [Malice?](./2024/10/21-23_Malice)
+		- 22th : [Something Changed](./2024/10/22-18_Something-changed)
+		- 23th : [Someone is finally doing something](./2024/10/23_Someone-if-finally-doing-something)
+		- 28th : [Forum is back](./2024/10/28_Forum-is-back)
 
 ## References
 
