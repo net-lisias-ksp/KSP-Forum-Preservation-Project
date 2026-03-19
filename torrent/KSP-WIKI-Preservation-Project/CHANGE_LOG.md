@@ -1,6 +1,10 @@
 # KSP's Wiki Preservation Project :: CHANGE LOG
 
-* 2024-0505: April 2025 deliverable
+* 2025-0613: May 2025 deliverable
+	+ RealLife™ and DayJob© are hectic since the last week of May.
+		- This not only delayed this deliverable, but seriously hindered my free time, leading to temporarily pausing some side tasks - as this one.
+		- Expect some more weeks of silence until I'll be able to archive Wiki again.
+* 2025-0505: April 2025 deliverable
 	+ No news is good news.
 * 2025-0403: March 2025 deliverable
 	+ I made something very, verey stupid on the code and literaly binned a month of work: I essentially scraped the same page over and over again, wasting almost 5GB of bandwidth. #facepalm
