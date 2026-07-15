@@ -6,7 +6,12 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## News
 
-As from 2025-0509:1330z, Forum is down again. 😬 It's all I can say for now, this month I'm not scraping Forum yet.
+And, boy, here we go again. As from July 13th, 2026 23:00 Zulu Time, Forum is down once more.
+
+<details>
+Forum became unavailable on March 19th, 2026 from 13:30 to 17:00 Zulu time.
+
+Forum gone down 2025-0509:1330z, again. 😬 It's all I can say for now, this month I'm not scraping Forum yet.
 
 Forum's was down since 2024-1016, but **finally** came back to life at 2024-1028.
 
@@ -15,6 +20,8 @@ Forum was down again in January 22th and 23th 2025, coming back for good on 24th
 In 2025-0222, a mishap on handling the default theme's CSS rendered the site screwed. ~~Switching to any other theme works around the issue.~~ The issue is fixed since Feb 23th 8:00z.
 
 Forum was scheduled to go down for maintenance and migration on 2025-0414. It came back next day as intended.
+
+</details>
 
 Check the `News` section bellow.
 
