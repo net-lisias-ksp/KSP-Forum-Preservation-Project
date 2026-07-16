@@ -6,7 +6,7 @@ We are hoping for the best, but expecting the worst. The hard part will be to ex
 
 ## News
 
-And, boy, here we go again. As from July 13th, 2026 23:00 Zulu Time, Forum is down once more.
+And, boy, here we go again. As from July 13th, 2026 23:00 Zulu Time, Forum was down once more. It came back 16Th, 12:00 Zulu Time.
 
 <details>
 Forum became unavailable on March 19th, 2026 from 13:30 to 17:00 Zulu time.

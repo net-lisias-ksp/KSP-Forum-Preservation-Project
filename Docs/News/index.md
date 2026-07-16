@@ -6,9 +6,10 @@ This document summarises the event chronologically:
 
 * 2026:
 	+ July:
-		- 13th: At aproximately 23:00 GMT, Forum gone dark. Again.
+		- 13th: At approximately 23:00 GMT, Forum gone dark. Again.
 			- Moderators said the IT guy is trying to contact the service provider to find out what has happened. The company running the forum did not cause this. 
-			- Since this is an ongoing event, the issue [#19](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues/19) is being used to track it down.
+		- 16th: At approximately 12:00 GMT, Forum came back form the dead. Again.
+			- The issue [#19](https://github.com/net-lisias-ksp/KSP-Forum-Preservation-Project/issues/19) was used to track the event.
 	+ March
 		- 19th: [Temporally Unavailable](./2026/03/19_Forum-temporarily-unavailable)
 * 2025:

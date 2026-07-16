@@ -4,6 +4,8 @@
 
 This was an uneventful year. Until ...
 
+* [July](./07/):
+	+ Forum was down for about 2 days
 * [March](./03/):
 	+ Forum temporarily unavailable
 
